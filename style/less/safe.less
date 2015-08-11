@@ -1,0 +1,101 @@
+@import "lib.less";
+
+.wapper{ width: 1180px; margin: 20px auto;
+  .pannle{ position: relative; .cf();
+    .pannle-left{ float: left; width: 210px;position: relative; margin-bottom: 20px; box-shadow: 2px 2px 2px #ccc;
+      .left-title{ width: 208px; border: 1px solid #c7c7c7; height: 598px;
+        h3{ padding-left: 20px; height: 40px; line-height: 40px; font-size: 18px; color: #fff; background-color: #24ba80;}
+        ul{
+          .li{ border-bottom: 1px solid #c7c7c7; padding: 20px; .cf();
+            i{ display: inline-block; float: left; width: 9px; height: 9px; .bg("../images/safe.png",no-repeat,0 -172px); margin-top: 3px; margin-right: 5px;}
+            span{ float: left; font-size: 14px; color: #737373;}
+            ul.silder{ padding: 10px 0; float: left; width: 100%;
+              li{ height: 30px; line-height: 30px; padding-left: 30px; .bg("../images/safe.png",no-repeat,18px -193px);
+                a{ display: block; width: 100%; height: 100%; font-size: 12px; color: #333;}
+              }
+              li:hover{
+                a{ text-decoration: underline;}
+              }
+            }
+          }
+        }
+      }
+    }
+    .pannle-right{ float: left; width: 968px; height: 598px; position: relative; border: 1px solid #c7c7c7; border-left: none;
+      .location{ height: 30px; line-height: 30px; padding: 10px 20px; color: #737373; position: relative; overflow: hidden; border-bottom: 1px solid #c7c7c7;
+        span{ float: left;}
+        a{ float: left; margin: 0 8px; color: #737373;}
+        a:hover{ text-decoration: underline; color: #007347;}
+        i{ float: left; font-family: SimSun; font-weight: bolder; line-height: 28px;}
+        a.help{ float: right; color: #00b971; padding-left: 20px; .bg("../images/safe.png",no-repeat,0 -229px);}
+      }
+      .safe-box{ padding: 20px;
+        div.password{
+          .class{ float: left; width: 100px; margin-right: 20px; margin-top: 30px;
+            span{ display: block; text-align: center;
+              i{ color: #f47400; font-weight: bolder;}
+            }
+            .class-grade{
+              span{ display: inline-block; width: 30px; height: 14px; line-height: 15px; text-align: center; background-color: #b3b3b3; color: #fff;}
+              span.active{ background-color: #f47400; color: #fff;}
+            }
+          }
+        }
+        .safe-list{ height: 109px; border-bottom: 1px dashed #ccc; position: relative; .cf();
+          .bind{float: left; width: 100px; height: 76px; margin-right: 20px; margin-top: 18px; .bg("../images/safe.png",no-repeat,0 0);}
+          .is{ background-position: 0 -76px;}
+          .name{ float: left; width: 100px; margin-right: 50px; margin-top: 40px; text-align: center;}
+          .desc{ float: left; width: 470px;  margin-right: 40px; margin-top: 40px;}
+          .operate{ float: left; width: 100px; margin-top: 40px;
+            .setting{ display: inline-block; width: 78px; height: 22px; line-height: 18px; text-align: center; border:1px solid #e5340f; background-color: #fff; color: #e5340f; border-radius: 5px;}
+            .setting:hover{ background-color: #e5340f; color: #fff;}
+          }
+        }
+      }
+    }
+  }
+}
+
+.register-box{ display: none; background-color: #fff; position: absolute; left: 50%; top: 50%; width: 500px; margin-left: -250px; margin-top: -120px;
+  .title{  height: 40px; line-height: 40px; background-color: #24ba80; position: relative; overflow: hidden;
+    h3{ float: left; width: 214px; height: 40px; color: #fff; text-align: center; font-size: 16px;}
+    a{float: right; width: 40px; height: 40px; background: url("../css/images/order.png") no-repeat 0 -61px;}
+  }
+  .register{ border: 2px solid #24ba80; padding-bottom: 20px;
+    .list{ height: 40px; .cf(); margin-top: 20px; position: relative;
+      span{ float: left; display: inline-block; width: 100px; height: 40px; line-height: 40px; margin-right: 20px; text-align: right; font-size: 14px; .omit(); }
+      input{ float: left; height: 14px; line-height: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; color: #999;}
+      input.account{ width: 260px;}
+      input.yanzhengma{ width: 80px;}
+      input:focus{ border-color: #00b971; color: #333;}
+      img{ float: left; display: inline-block; width: 90px; height: 36px; margin: 0 5px; }
+      i{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #737373; }
+      a{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #5caae6; font-weight: bolder; }
+      a.seconds{ float: left; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #ccc; border-radius: 5px; color: #fff; background-color: #00b971;}
+      a.actived{ background-color: #efefef; color: #737373;}
+      #reg{ margin-left: 118px;}
+      #reg1{ margin-left: 118px;}
+      #reg2{ margin-left: 118px;}
+      label{ margin-left: 5px;
+        b{ color: #e5340f;}
+      }
+      .error{ display: none; .cf(); float: left; height: 40px; line-height: 40px; color: #e5340f; max-width: 280px; .omit();
+        i{ float: left; width: 24px; height: 18px; .bg("../images/msg.png",no-repeat,0 -23px); margin: 8px 0 0 6px;}
+      }
+      .tips{ display: none; float: left; padding: 0 5px; height: 34px; line-height: 36px; border: 1px solid #ccc; margin-left: 20px; position: relative;
+        i{ display: inline-block; position: absolute; left: -13px; top: 12px; width: 8px; height: 11px; .bg("../images/msg.png",no-repeat,0 -51px);}
+      }
+    }
+    .safe{ margin-bottom: 20px; padding-right:94px; position: relative; .cf();
+      .degree{ float: right; height: 20px; line-height: 20px; .cf();
+        span{ float: left; margin-right: 10px;}
+        i{ float: left; display: inline-block; width: 30px; text-align: center; background-color: #b4b4b4; color: #fff; margin-left: 1px;}
+        i.active{ background-color: #fc280e;}
+      }
+    }
+    .next-step{ position: relative; margin-top: 20px;
+      button{ display: inline-block; width: 270px; height: 30px; line-height: 24px; border: 1px solid #00a665; background-color: #00b971; text-align: center; color: #fff; border-radius: 5px; margin-left: 120px;}
+    }
+  }
+
+}

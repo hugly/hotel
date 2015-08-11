@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/safe.min.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+</head>
+<body>
+<!--页头部分-->
+<div class="header">
+    @@include("../common/header.html")
+</div>
+<!--正文部分-->
+<div class="wapper">
+    <!--正文部分-->
+    <div class="pannle">
+        <!--左侧部分-->
+        <div class="pannle-left">
+            <div class="left-title">
+                <h3>会员中心</h3>
+                <ul>
+                    <li class="li">
+                        <i></i><span>订单管理</span>
+                        <ul class="silder">
+                            <li><a href="javascript:;">订单管理</a></li>
+                            <li><a href="javascript:;">退单处理</a></li>
+                        </ul>
+                    </li>
+                    <li class="li">
+                        <i></i><span>账号管理</span>
+                        <ul class="silder">
+                            <li><a href="javascript:;">账号信息</a></li>
+                            <li><a href="javascript:;">账号安全</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--右侧部分-->
+        <div class="pannle-right">
+            <!--当前位置-->
+            <div class="location">
+                <span>当前位置：</span><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a>
+                <a href="javascript:;" class="help">查看帮助</a>
+            </div>
+            <!--账号安全-->
+            <div class="safe-box">
+                <div class="safe-box">
+                    <div class="safe-list password">
+                        <div class="class">
+                            <span>强度：<i>中</i></span>
+                            <div class="class-grade">
+                                <span class="active">弱</span>
+                                <span>中</span>
+                                <span>强</span>
+                            </div>
+                        </div>
+                        <div class="name">登录密码</div>
+                        <div class="desc">安全性高的密码可以使账号更安全。建议您定期更换密码，且设置一个包含数字和字母，并长度超过6位以上的密码。</div>
+                        <div class="operate">
+                            <button class="setting">修改</button>
+                        </div>
+                    </div>
+                    <div class="safe-list">
+                        <div class="is bind">
+                        </div>
+                        <div class="name">身份证绑定</div>
+                        <div class="desc">用于提升账号的安全性和信任级别。认证后的有卖家记录的账号不能修改认证信息。</div>
+                        <div class="operate">
+                            <button class="setting">绑定</button>
+                        </div>
+                    </div>
+                    <div class="safe-list">
+                        <div class="is bind">
+                        </div>
+                        <div class="name">手机号码绑定</div>
+                        <div class="desc">绑定手机后，您即可享受淘宝丰富的手机服务，如手机登录、手机找回密码、开通手机动态密码等</div>
+                        <div class="operate">
+                            <button class="setting">绑定</button>
+                        </div>
+                    </div>
+                    <div class="safe-list">
+                        <div class="bind">
+                        </div>
+                        <div class="name">邮箱绑定</div>
+                        <div class="desc">不同于登录邮箱。当您选择“安全保护问题”找回密码时，填写正确的问题答案后，我们会将新密码发到您的安全邮箱。</div>
+                        <div class="operate">
+                            <button class="setting">绑定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页脚部分-->
+    <div class="footer">
+        @@include("../common/footer.html")
+    </div>
+</div>
+<div class="register-box">
+    <div class="title">
+        <h3>更改密码</h3>
+        <a href="javascript:;" class="close-btn"></a>
+    </div>
+    <div class="register">
+        <div class="list">
+            <span>登录密码</span>
+            <input type="password" class="account">
+            <div class="ok"></div>
+            <div class="error"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+            <div class="tips"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+        </div>
+        <div class="list">
+            <span>新密码</span>
+            <input type="password" class="account">
+            <div class="ok"></div>
+            <div class="error"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+            <div class="tips"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+        </div>
+
+        <div class="list">
+            <span>确认密码</span>
+            <input type="password" class="account">
+            <div class="ok"></div>
+            <div class="error"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+            <div class="tips"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+        </div>
+        <div class="list">
+            <span>验证码</span>
+            <input type="text" class="yanzhengma">
+            <img>
+            <i>看不清？</i>
+            <a href="javascript:;">换一张</a>
+        </div>
+        <div class="next-step">
+            <button>完成</button>
+        </div>
+    </div>
+</div>
+<div class="register-box">
+    <div class="title">
+        <h3>绑定身份证号码</h3>
+        <a href="javascript:;" class="close-btn"></a>
+    </div>
+    <div class="register">
+        <div class="list">
+            <span>身份证号码</span>
+            <input type="text" class="account">
+            <div class="ok"></div>
+            <div class="error"><i></i>请输入18位二代身份证号码。</div>
+            <div class="tips"><i></i>请输入18位二代身份证号码。</div>
+        </div>
+        <div class="list">
+            <span>姓名</span>
+            <input type="text" class="account">
+            <div class="ok"></div>
+            <div class="error"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+            <div class="tips"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+        </div>
+        <div class="list">
+            <span>验证码</span>
+            <input type="text" class="yanzhengma">
+            <img>
+            <i>看不清？</i>
+            <a href="javascript:;">换一张</a>
+        </div>
+        <div class="next-step">
+            <button>完成</button>
+        </div>
+    </div>
+</div>
+<div class="register-box">
+    <div class="title">
+        <h3>绑定手机号码</h3>
+        <a href="javascript:;" class="close-btn"></a>
+    </div>
+    <div class="register">
+        <div class="list">
+            <span>手机号码</span>
+            <input type="text" class="account" value="手机号/邮箱/用户名/" text="手机号/邮箱/用户名/">
+            <div class="ok"></div>
+            <div class="error"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+            <div class="tips"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+        </div>
+        <div class="list">
+            <span>短信验证码</span>
+            <input type="text" class="yanzhengma">
+            <a href="javascript:;" class="seconds">60秒后重新获取验证码</a>
+        </div>
+        <div class="next-step">
+            <button>完成</button>
+        </div>
+    </div>
+</div>
+<div class="register-box">
+    <div class="title">
+        <h3>绑定邮箱</h3>
+        <a href="javascript:;" class="close-btn"></a>
+    </div>
+    <div class="register">
+        <div class="list">
+            <span>邮箱账号</span>
+            <input type="text" class="account" value="手机号/邮箱/用户名/" text="手机号/邮箱/用户名/">
+            <div class="ok"></div>
+            <div class="error"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+            <div class="tips"><i></i>请输入6-20位的数字或字母，必须以字母开头</div>
+        </div>
+        <div class="list">
+            <span>验证码</span>
+            <input type="text" class="yanzhengma">
+            <img>
+            <i>看不清？</i>
+            <a href="javascript:;">换一张</a>
+        </div>
+        <div class="next-step">
+            <button>完成</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../js/control/safe.js"></script>
+</body>
+</html>

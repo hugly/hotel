@@ -1,0 +1,137 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.pannle {
+  width: 1200px;
+  margin: 20px auto;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+}
+.pannle .pannle-title {
+  width: 100%;
+  position: relative;
+}
+.pannle .pannle-title h3 {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 16px;
+  color: #007347;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+.pannle .unit-info {
+  position: relative;
+  border-top: 1px solid #e6e6e6;
+  padding: 20px 0;
+}
+.pannle .unit-info h3 {
+  color: #303030;
+  font-size: 16px;
+}
+.pannle .unit-info .list {
+  padding-left: 250px;
+  margin-bottom: 10px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.pannle .unit-info .list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .unit-info .list span {
+  float: left;
+  width: 120px;
+  text-align: right;
+  line-height: 50px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.pannle .unit-info .list span.has:after {
+  content: "*";
+  color: #c00;
+}
+.pannle .unit-info .list input[type="text"] {
+  float: left;
+  height: 14px;
+  width: 270px;
+  line-height: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 7px;
+  border-radius: 5px;
+}
+.pannle .unit-info .list input[type="text"]:focus {
+  border-color: #fc280e;
+}
+.pannle .unit-info .list select {
+  float: left;
+  margin-right: 10px;
+  min-width: 120px;
+  margin-top: 15px;
+}
+.pannle .unit-info .list .input-list {
+  float: left;
+  width: 300px;
+}
+.pannle .unit-info .list input[type='radio'] {
+  float: left;
+  margin-top: 15px;
+}
+.pannle .unit-info .list label {
+  float: left;
+  padding: 15px 15px 15px 5px;
+}
+.pannle .unit-info .list label b {
+  color: #007347;
+}
+.pannle .unit-info .list input[type="text"].yanzhengma {
+  width: 120px;
+}
+.pannle .unit-info .list .time {
+  float: left;
+  width: 140px;
+  height: 14px;
+  line-height: 14px;
+  padding: 10px;
+  margin: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.pannle .unit-info .list .getcode {
+  float: left;
+  width: 160px;
+  height: 14px;
+  line-height: 14px;
+  padding: 10px;
+  margin: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #24ba80;
+  color: #fff;
+}
+.pannle .unit-info .list input[type='checkbox'] {
+  float: left;
+  margin-top: 15px;
+  margin-left: 128px;
+}
+.pannle .unit-info .ok-btn {
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  height: 14px;
+  line-height: 14px;
+  padding: 10px;
+  border: 1px solid #15a66e;
+  border-radius: 5px;
+  background-color: #24ba80;
+  color: #fff;
+  margin-left: 375px;
+}

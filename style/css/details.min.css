@@ -1,0 +1,516 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+body {
+  background-color: #f6f6f6;
+}
+body .header {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+body .wapper {
+  width: 1180px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+body .wapper .details {
+  padding: 20px;
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+body .wapper .details .details-left {
+  float: left;
+  width: 800px;
+  height: 300px;
+  min-height: 1px;
+  zoom: 1;
+}
+body .wapper .details .details-left:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+body .wapper .details .details-left .left-img {
+  float: left;
+  width: 400px;
+  height: 300px;
+  margin-right: 10px;
+}
+body .wapper .details .details-left .left-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .wapper .details .details-left .right-img {
+  float: left;
+  min-height: 1px;
+  zoom: 1;
+  width: 390px;
+  height: 310px;
+}
+body .wapper .details .details-left .right-img:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+body .wapper .details .details-left .right-img img {
+  float: left;
+  display: block;
+  width: 185px;
+  height: 145px;
+  margin: 0 10px 10px 0;
+}
+body .wapper .details .details-right {
+  float: left;
+  width: 330px;
+  margin-left: 10px;
+}
+body .wapper .details .details-right .det {
+  width: 100%;
+  border-bottom: 1px dashed #ccc;
+}
+body .wapper .details .details-right .det h3 {
+  font-size: 18px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+body .wapper .details .details-right .det b {
+  color: #f25500;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bolder;
+}
+body .wapper .details .details-right .list {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+body .wapper .details .details-right .list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+body .wapper .details .details-right .list span {
+  float: left;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+}
+body .wapper .details .details-right .list p {
+  float: left;
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+body .wapper .details .details-right .list .type {
+  float: left;
+  width: 250px;
+}
+body .wapper .details .details-right .list .type select {
+  width: 120px;
+}
+body .wapper .details .details-right .list input[type="date"] {
+  width: 120px;
+}
+body .wapper .details .details-right .list div.num .num-oper {
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  height: 100%;
+  padding-top: 8px;
+}
+body .wapper .details .details-right .list div.num .num-oper .num-pre {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat 0 -185px;
+}
+body .wapper .details .details-right .list div.num .num-oper .num-pre-active {
+  background-position: -25px -185px;
+}
+body .wapper .details .details-right .list div.num .num-oper .num-input {
+  float: left;
+  width: 40px;
+  height: 14px;
+  line-height: 14px;
+  padding: 3px 10px;
+  color: #333;
+  margin: 0 5px;
+}
+body .wapper .details .details-right .list div.num .num-oper .num-next {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat -25px -156px;
+}
+body .wapper .details .details-right div.operation {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 5px;
+}
+body .wapper .details .details-right div.operation a {
+  float: left;
+  margin-top: 5px;
+  background-image: url("../css/images/details.png");
+  background-repeat: no-repeat;
+}
+body .wapper .details .details-right div.operation a.buy-now {
+  width: 82px;
+  height: 30px;
+  margin-right: 10px;
+  background-position: 0px -32px;
+}
+body .wapper .details .details-right div.operation a.add-cart {
+  width: 122px;
+  height: 30px;
+  background-position: 0 0;
+}
+body .wapper .details-box {
+  background-color: #fff;
+  z-index: 3;
+  position: relative;
+}
+body .wapper .details-box .order-title {
+  background-color: #fff;
+  z-index: 9;
+  height: 40px;
+  line-height: 40px;
+  width: 1180px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 2px solid #179251;
+}
+body .wapper .details-box .order-title ul {
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .details-box .order-title ul li {
+  float: left;
+  border-right: 1px solid #ccc;
+  padding: 0 20px;
+}
+body .wapper .details-box .order-title ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-size: 16px;
+}
+body .wapper .details-box .order-title ul li.active {
+  background-color: #179251;
+}
+body .wapper .details-box .order-title ul li.active a {
+  color: #fff;
+}
+body .wapper .details-box div.order-scroll {
+  position: fixed;
+  top: 0;
+}
+body .wapper .details-pannel {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  width: 1180px;
+}
+body .wapper .details-pannel .pannel-list {
+  margin-left: 20px;
+  display: none;
+  margin-top: 10px;
+}
+body .wapper .details-pannel .pannel-list .pannel-title {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid #e6e6e6;
+  position: relative;
+}
+body .wapper .details-pannel .pannel-list .pannel-title span {
+  display: inline-block;
+  width: 32px;
+  position: absolute;
+  background-image: url("../css/images/details.png");
+  background-repeat: no-repeat;
+}
+body .wapper .details-pannel .pannel-list .pannel-title h3 {
+  display: inline-block;
+  font-size: 18px;
+  border-bottom: 2px solid #179251;
+  color: #179251;
+  font-weight: bolder;
+}
+body .wapper .details-pannel .pannel-list .pannel-con {
+  margin: 20px 0;
+}
+body .wapper .details-pannel .pannel-list .pannel-con h6 {
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 30px;
+}
+body .wapper .details-pannel .pannel-list .pannel-con p {
+  line-height: 30px;
+}
+body .wapper .details-pannel .pannel-list .pannel-con p span {
+  font-size: 12px;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+body .wapper .details-pannel .pannel-list .pannel-con h2 {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #ff7f21;
+}
+body .wapper .details-pannel .pannel-list .pannel-con img {
+  display: block;
+  width: 100%;
+}
+body .wapper .details-pannel .pannel-list #map {
+  height: 500px;
+}
+body .wapper .details-pannel div.order span {
+  height: 28px;
+  background-position: 0 -64px;
+  left: -40px;
+  top: 8px;
+}
+body .wapper .details-pannel div.scenic span {
+  height: 28px;
+  background-position: 0 -94px;
+  left: -40px;
+  top: 4px;
+}
+body .wapper .details-pannel div.traffic span {
+  height: 32px;
+  background-position: 0px -122px;
+  left: -40px;
+  top: 6px;
+}
+body .wapper .details-pannel div.order-table {
+  border: 1px solid #ccc;
+  margin-left: 0;
+}
+body .wapper .details-pannel div.order-table .table-title {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+}
+body .wapper .details-pannel div.order-table .table-title div {
+  float: left;
+  color: #777;
+  text-align: left;
+}
+body .wapper .details-pannel div.order-table .table-box {
+  position: relative;
+  padding-bottom: 10px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list {
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+  line-height: 40px;
+  border-bottom: 1px dashed #ccc;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div {
+  float: left;
+  height: 40px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.name a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #179251;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.name a b {
+  display: inline-block;
+  float: left;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.name a span {
+  display: inline-block;
+  float: left;
+  width: 16px;
+  height: 9px;
+  margin-left: 5px;
+  margin-top: 13px;
+  background: url("../css/images/details.png") no-repeat -105px -57px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.name a span.down {
+  background-position: -105px -47px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.product span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.price span {
+  color: #f05600;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.lineprice input {
+  width: 80px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.type select {
+  width: 120px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.num .num-oper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 8px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.num .num-oper .num-pre {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat 0 -185px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.num .num-oper .num-pre-active {
+  background-position: -25px -185px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.num .num-oper .num-input {
+  float: left;
+  width: 40px;
+  height: 14px;
+  line-height: 14px;
+  padding: 3px 10px;
+  color: #333;
+  margin: 0 5px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.num .num-oper .num-next {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat -25px -156px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.operation {
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.operation a {
+  float: left;
+  margin-top: 5px;
+  background-image: url("../css/images/details.png");
+  background-repeat: no-repeat;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.operation a.buy-now {
+  width: 82px;
+  height: 30px;
+  margin-right: 10px;
+  background-position: 0px -32px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.operation a.add-cart {
+  width: 122px;
+  height: 30px;
+  background-position: 0 0;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.operation a.carting {
+  width: 122px;
+  height: 30px;
+  background-image: url("../css/images/carting.png");
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.list-details {
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px 20px;
+  display: none;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.list-details .list-icon {
+  display: inline-block;
+  width: 17px;
+  height: 9px;
+  position: absolute;
+  left: 30px;
+  top: -9px;
+  background-image: url("../css/images/details.png");
+  background-repeat: no-repeat;
+  background-position: -104px -33px;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.list-details .product-details {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.list-details .product-details span {
+  float: left;
+  width: 120px;
+  color: #999;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list div.list-details .product-details p {
+  float: left;
+  width: 970px;
+  color: #333;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list:hover {
+  background-color: #f1f7f2;
+}
+body .wapper .details-pannel div.order-table .table-box .table-list:hover .list-details {
+  background-color: #fff;
+}
+body .wapper .details-pannel div.order-table .name {
+  width: 250px;
+}
+body .wapper .details-pannel div.order-table .product {
+  width: 210px;
+}
+body .wapper .details-pannel div.order-table .price {
+  width: 80px;
+}
+body .wapper .details-pannel div.order-table .lineprice {
+  width: 90px;
+}
+body .wapper .details-pannel div.order-table .type {
+  width: 140px;
+}
+body .wapper .details-pannel div.order-table .num {
+  width: 160px;
+}
+body .wapper .details-pannel div.order-table .operation {
+  width: 226px;
+}
+body .wapper .footer {
+  width: 100%;
+  position: relative;
+}

@@ -1,0 +1,97 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.wapper {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+.wapper .pannel {
+  width: 1200px;
+  margin: 30px auto;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannel:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannel .pannel-left {
+  float: left;
+  width: 900px;
+  position: relative;
+}
+.wapper .pannel .pannel-left .content {
+  width: 450px;
+  margin-left: 225px;
+  margin-top: 80px;
+}
+.wapper .pannel .pannel-left .content .ok {
+  height: 40px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+.wapper .pannel .pannel-left .content .ok:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannel .pannel-left .content .ok i {
+  float: left;
+  width: 24px;
+  height: 40px;
+  background: transparent url("images/ok.png") no-repeat 0 9px;
+  margin-right: 10px;
+}
+.wapper .pannel .pannel-left .content .ok span {
+  float: left;
+  line-height: 40px;
+  font-size: 24px;
+  color: #0f8b45;
+}
+.wapper .pannel .pannel-left .content .control {
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+  margin-left: 55px;
+}
+.wapper .pannel .pannel-left .content .control:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannel .pannel-left .content .control a {
+  float: left;
+  width: 160px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid #fff;
+  margin-right: 10px;
+}
+.wapper .pannel .pannel-left .content .control .goadd {
+  background-color: #179251;
+  border-color: #108547;
+}
+.wapper .pannel .pannel-left .content .control .pay {
+  background-color: #ee6500;
+  border-color: #d65b00;
+}
+.wapper .pannel .pannel-right {
+  float: left;
+  width: 300px;
+}

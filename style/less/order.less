@@ -1,0 +1,165 @@
+body{ background-color: #f6f6f6; position: relative; z-index: 1;
+  .header{ width: 100%; height: 80px; background-color: #fff;
+    .header-box{ position: relative; overflow: hidden;
+      .logo{ float: left; padding-left: 15px; width: 250px; padding-top: 17px;}
+      .order-nav{ float: right; margin-right: 40px; margin-top: 27px;
+        ul{ position: relative; overflow: hidden;
+          li{ float: left; position: relative;
+            a{ display: inline-block;  height: 26px; line-height: 26px; padding: 0 10px;}
+            i{ display: inline-block; width: 0px; height: 12px; border-right: 1px solid #c6c6c6; position: absolute; right: 0; top: 6px; }
+          }
+        }
+      }
+    }
+  }
+  .wapper{ width: 1180px; margin: 0 auto;
+    .order-step{ height: 22px; width: 100%; margin: 20px 0 10px 0; background-color: #eee;
+      ul{ position: relative; overflow: hidden;
+        li{ float: left; width: 295px;  height: 100%; line-height: 22px; text-align: center; font-weight: bolder; position: relative;
+          span{ float: right; display: inline-block; width: 18px; height: 22px; background: url("../css/images/order.png") no-repeat 0 0; }
+          span.delta{ background-position: -21px 0;}
+          span.active{ background-position: 0 0;}
+          span.link{ background-position: -42px 0;}
+        }
+        li.chooseed{ color: #fff; background-color: #25ba80;}
+      }
+    }
+    .order-box{ background-color: #fff; padding: 20px; border: 3px solid #e6e6e6; box-sizing: border-box;
+      .order-info{ margin-bottom: 20px;
+        h3{ height: 40px; line-height: 40px; font-size: 18px; color: #303030; font-weight: bolder; border-bottom: 2px solid #42cf9a;}
+        .choose-data{ margin: 20px 0 10px 0; height: 30px; line-height: 30px; position: relative; overflow: hidden;
+          span{ padding-left: 20px;}
+          input{ height: 14px; line-height: 14px; padding: 5px 28px 5px 8px; width: 160px;}
+          i.data-icon{ display: inline-block; width: 15px; height: 15px; position: absolute; left: 260px; top: 7px; background: url("../css/images/order.png") no-repeat 0 -24px;}
+        }
+        .details-calendar{ display: inline-block; width: 600px; height: 260px; margin-top: 10px; position: relative;}
+        .order-info-title{ background-color: #f6f6f6; height: 30px; line-height: 30px; padding: 0 20px; position: relative; overflow: hidden;
+          div{ float: left; text-align: left;}
+        }
+        .order-info-list{padding:0 20px; height: 45px; line-height: 45px; border-bottom: 1px dashed #ccc; position: relative; overflow: hidden;
+          div{ float: left; text-align: left; height: 45px;
+            span{
+              display: block; width: 100%; height: 100%;
+            }
+          }
+          div.name{
+            a{ color: #179251; font-weight: bolder;display: block; width: 100%; height: 100%;}
+          }
+          div.people{
+            .num-oper{ width: 100%; height: 35px; padding-top: 10px; position: relative; overflow: hidden;
+              a{ float: left; width: 15px; height: 15px; margin-top: 5px; background: url("../css/images/order.png") no-repeat 0 0;}
+              .num-pre{ background-position: 0 -41px;}
+              .num-input{ float: left; width: 36px; height: 22px; margin: 0 5px; text-align: center;}
+              .num-next{ background-position: -17px -41px; }
+            }
+          }
+          div.price{
+            span{ font-size: 16px; color: #f47300; font-weight: bolder;}
+          }
+          div.total{
+            span{ font-size: 16px; color: #f47300; font-weight: bolder;}
+          }
+          div.tourist{
+            a{ display: inline-block; width: 64px; height: 26px; line-height: 26px; color: #00ba71; border: 1px solid #00ba71; border-radius: 5px; text-align: center;}
+          }
+        }
+        .order-info-list:hover{ background-color: #f1f7f2;}
+        .name{ width: 220px;}
+        .product{ width: 220px;}
+        .type{ width: 110px;}
+        .people{ width: 130px;}
+        .price{ width: 130px;}
+        .total{ width: 130px;}
+        .tourist{ width: 150px;}
+      }
+    }
+    .order-people{
+      h3{height: 40px; line-height: 40px; font-size: 18px; color: #303030; font-weight: bolder; border-bottom: 2px solid #42cf9a;}
+      .people-details{ margin-top: 20px;
+        ul{ position: relative;
+          li{ height: 30px; line-height: 30px; position: relative; overflow: hidden; margin-bottom: 10px;
+            span{ float: left; width: 100px; text-align: right; color: #ababab;
+              i{ display: inline-block; padding-left: 4px; padding-top: 4px; width: 6px; height: 6px; background: url("../css/images/order.png") no-repeat -54px -34px;}
+            }
+            input{ float: left; height: 14px; line-height: 14px; padding: 4px 8px;}
+            input.people-name{ width: 240px;}
+            input.people-id{ width: 200px;}
+            input.people-phone{ width: 240px;};
+          }
+        }
+      }
+    }
+    .order-total{ width: 100%; height: 46px; line-height: 46px; border: 2px solid #e6e6e6; box-sizing: border-box; background-color: #fff; margin-top: 20px; position: relative;
+      .order-price{ float: left; padding-left: 20px;
+        span{ font-size: 18px; color: #848484;
+          b{ font-weight: bolder; padding-left: 10px; color: #f25500;}
+        }
+        input{ margin-left: 20px;  }
+        label{
+          a{ color: #f25500; margin: 0 5px; font-weight: bolder;}
+        }
+      }
+      .order-next{ position: absolute; right: 0; top: -2px;
+        a.next-btn{ display: block; width: 180px; height: 44px; line-height: 44px; border: 1px solid #ce6100; text-align: center; background-color: #f57a00; color: #fff; font-size: 14px;}
+      }
+    }
+    .footer-box{ width: 1180px; margin: 40px auto 0;
+      .footer{ color: #737373;
+        .footer-top{ text-align: center;
+          a{ position: relative; display: inline-block; height: 26px; line-height: 26px; padding: 0 10px;}
+        }
+        .footer-copy{ text-align: center; margin-top: 10px;}
+      }
+    }
+  }
+  .bind-tourist{ display: none; width: 860px; height: auto; position: absolute; left: 50%; top: 50%; margin-left: -430px; border: 2px solid #24ba80; box-sizing: border-box; background-color: #fff; z-index: 10;
+    .bind-title{ height: 40px; line-height: 40px; background-color: #24ba80; position: relative; overflow: hidden;
+      h3{ float: left; width: 814px; height: 40px; color: #fff; text-align: center; font-size: 16px; }
+      .close-btn{ float: right; width: 40px; height: 40px; background: url("../css/images/order.png") no-repeat 0 -61px;}
+    }
+    .bind-con{ padding: 20px;
+      .con-title{ width: 100%; height: 40px; line-height: 40px; position: relative; overflow: hidden;
+        h3{ float: left; font-size: 14px; color: #303030; margin: 0 10px;}
+        .add-tourist{ float: left; width: 74px; height: 26px; line-height: 26px; color: #fff; text-align: center; background-color: #ff7938; border-radius: 5px; margin-right: 10px; margin-top: 5px;}
+        span{ float: left; color: #ababab;}
+      }
+      .bind-box{
+        .bind-list-title{ height: 30px; line-height: 30px; padding: 0 20px; background-color: #f6f6f6;
+          div{ float: left;
+          }
+        }
+        .bind-list-box{ width: 100%; max-height: 300px; overflow-y: scroll;
+          .bind-list{ height: 40px; line-height: 40px; padding: 0 20px; border-bottom: 1px dashed #ccc;
+            div{ float: left;
+              span,a{ display: block; width: 100%; height: 100%;}
+            }
+          }
+          .bind-list:hover{ background-color: #f1f7f2;}
+        }
+        .choose{ width: 80px;}
+        .name{ width: 194px;}
+        .number{ width: 220px;}
+        .phone{ width: 180px;}
+        .operation{ width: 80px;}
+      }
+    }
+  }
+  .add-park{ display: none; width: 340px; height: 260px; background-color: #fff; position: absolute; left:50%; top: 50%; margin-left: -170px; margin-top: -130px; border: 2px solid #24ba80; box-sizing: border-box; z-index: 10;
+    .add-title{  height: 40px; line-height: 40px; background-color: #24ba80; position: relative; overflow: hidden;
+      h3{ float: left; width: 214px; height: 40px; color: #fff; text-align: center; font-size: 16px;}
+      a{float: right; width: 40px; height: 40px; background: url("../css/images/order.png") no-repeat 0 -61px;}
+    }
+    .add-box{ padding: 30px 20px 10px 20px;
+      ul{ position: relative;
+        li{ height: 30px; line-height: 30px; position: relative; overflow: hidden; margin-bottom: 10px;
+          span{ float: left; width: 80px; margin-right: 10px; text-align: right;}
+          input{ float: left; width: 160px; height: 14px; line-height: 14px; padding: 5px 10px;}
+        }
+      }
+    }
+    .ok-box{ text-align: center; padding-left: 110px;
+      a.ok-btn{ display: block; width: 54px; height: 26px; line-height: 26px; text-align: center; background-color: #ee4e00; color: #fff; border-radius: 5px;}
+    }
+  }
+  .zoom{ display: none; width: 100%; height: 100%; background-color: #000; opacity: .3; filter:alpha(opacity=30); position: absolute; left: 0; top: 0; z-index: 9;}
+}

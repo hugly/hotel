@@ -1,0 +1,408 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.wapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.wapper .location {
+  height: 30px;
+  line-height: 30px;
+  margin: 10px 0;
+  color: #a0a0a0;
+  position: relative;
+  overflow: hidden;
+}
+.wapper .location span {
+  float: left;
+}
+.wapper .location a {
+  float: left;
+  margin: 0 8px;
+  color: #a0a0a0;
+}
+.wapper .location a:hover {
+  text-decoration: underline;
+  color: #303030;
+}
+.wapper .location i {
+  float: left;
+  font-family: SimSun;
+  font-weight: bolder;
+  line-height: 28px;
+}
+.wapper .combined-box {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.wapper .combined-box .combined-title {
+  width: 1198px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #d2d7de;
+  border-bottom: none;
+  background-color: #eee;
+  z-index: 0;
+}
+.wapper .combined-box .combined-title ul {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.wapper .combined-box .combined-title ul li {
+  float: left;
+  padding: 0 25px;
+  color: #777777;
+  font-size: 14px;
+  border-right: 1px solid #d2d7de;
+  z-index: 2;
+  cursor: pointer;
+}
+.wapper .combined-box .combined-title ul li.active {
+  background-color: #fff;
+  color: #179251;
+  border-top: 2px solid #179251;
+}
+.wapper .combined-box .combined-con {
+  width: 1198px;
+  height: auto;
+  border: 1px solid #d2d7de;
+  background-color: #fff;
+  position: relative;
+}
+.wapper .combined-box .combined-con .num-oper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 8px;
+}
+.wapper .combined-box .combined-con .num-oper .num-pre {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat 0 -185px;
+}
+.wapper .combined-box .combined-con .num-oper .num-pre-active {
+  background-position: -25px -185px;
+}
+.wapper .combined-box .combined-con .num-oper .num-input {
+  float: left;
+  width: 40px;
+  height: 14px;
+  line-height: 14px;
+  padding: 3px 10px;
+  color: #333;
+  margin: 0 5px;
+}
+.wapper .combined-box .combined-con .num-oper .num-next {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat -25px -156px;
+}
+.wapper .combined-box .combined-con .travel-date {
+  padding: 10px 10px 10px 20px;
+  position: relative;
+  border-bottom: 1px solid #d2d7de;
+}
+.wapper .combined-box .combined-con .travel-date span {
+  display: inline-block;
+  margin-right: 20px;
+}
+.wapper .combined-box .combined-con .travel-num {
+  padding: 10px 10px 10px 20px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .combined-box .combined-con .travel-num:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .combined-box .combined-con .travel-num span {
+  float: left;
+  display: inline-block;
+  margin-right: 20px;
+  line-height: 40px;
+}
+.wapper .combined-box .combined-con .travel-num .num-box {
+  float: left;
+  width: 160px;
+  display: inline-block;
+}
+.wapper .combined-box .combined-con .order-table {
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+.wapper .combined-box .combined-con .order-table .table-title {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f8f8f8;
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.wapper .combined-box .combined-con .order-table .table-title div {
+  float: left;
+  color: #777;
+  text-align: left;
+}
+.wapper .combined-box .combined-con .order-table .table-title div.price {
+  text-align: center;
+}
+.wapper .combined-box .combined-con .order-table .table-title div.operation {
+  text-align: center;
+}
+.wapper .combined-box .combined-con .order-table .table-box {
+  position: relative;
+  padding-bottom: 10px;
+  z-index: 99;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list {
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+  padding-left: 20px;
+  line-height: 40px;
+  border-bottom: 1px dashed #ccc;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div {
+  float: left;
+  height: 40px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.name a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #179251;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.name a span {
+  display: inline-block;
+  width: 16px;
+  height: 9px;
+  margin-left: 5px;
+  background: url("../css/images/details.png") no-repeat -105px -57px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.name a span.down {
+  background-position: -105px -47px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.date input {
+  width: 100px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.product span,
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.ticket span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.price span {
+  color: #f05600;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.lineprice input {
+  width: 80px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.type select {
+  width: 120px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.num .num-oper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 8px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.num .num-oper .num-pre {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat 0 -185px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.num .num-oper .num-pre-active {
+  background-position: -25px -185px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.num .num-oper .num-input {
+  float: left;
+  width: 40px;
+  height: 14px;
+  line-height: 14px;
+  padding: 3px 10px;
+  color: #333;
+  margin: 0 5px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.num .num-oper .num-next {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat -25px -156px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.operation {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.operation a {
+  color: #f05600;
+  font-weight: bolder;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.list-details {
+  width: 440px;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  padding: 10px 20px;
+  display: none;
+  z-index: 100;
+  background-color: #fff;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.list-details .list-icon {
+  display: inline-block;
+  width: 17px;
+  height: 9px;
+  position: absolute;
+  left: 30px;
+  top: -9px;
+  background-image: url("../css/images/details.png");
+  background-repeat: no-repeat;
+  background-position: -104px -33px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.list-details .product-details {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.list-details .product-details span {
+  float: left;
+  width: 120px;
+  color: #999;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.list-details .product-details p {
+  float: left;
+  width: 390px;
+  color: #333;
+  line-height: 30px;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.list-box {
+  width: 556px;
+  height: auto;
+  float: right;
+  display: none;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list div.list-box .list-list {
+  border-top: 1px dashed #e6e6e6;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list:hover {
+  background-color: #f1f7f2;
+}
+.wapper .combined-box .combined-con .order-table .table-box .table-list:hover .list-details {
+  background-color: #fff;
+}
+.wapper .combined-box .combined-con .order-table .choose {
+  width: 80px;
+}
+.wapper .combined-box .combined-con .order-table .name {
+  width: 300px;
+}
+.wapper .combined-box .combined-con .order-table .price {
+  width: 100px;
+  text-align: center;
+}
+.wapper .combined-box .combined-con .order-table .ticket {
+  width: 120px;
+}
+.wapper .combined-box .combined-con .order-table .date {
+  width: 120px;
+}
+.wapper .combined-box .combined-con .order-table .type {
+  width: 160px;
+}
+.wapper .combined-box .combined-con .order-table .num {
+  width: 150px;
+}
+.wapper .combined-box .combined-con .order-table .operation {
+  width: 146px;
+  text-align: center;
+}
+.wapper .order-box {
+  border: 1px solid #e2e2e2;
+  height: 50px;
+  line-height: 50px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+.wapper .order-box .choose-box {
+  float: left;
+  padding-left: 20px;
+}
+.wapper .order-box .choose-box label {
+  margin-left: 5px;
+}
+.wapper .order-box .choose-box a {
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+}
+.wapper .order-box .order-details {
+  float: right;
+  padding-right: 120px;
+}
+.wapper .order-box .order-details span {
+  display: inline-block;
+  height: 100%;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.wapper .order-box .order-details span b {
+  color: #f25500;
+  margin: 0 5px;
+}
+.wapper .order-box .order-details a.next-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  width: 100px;
+  height: 52px;
+  line-height: 52px;
+  background-color: #f25500;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}

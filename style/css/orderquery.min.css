@@ -1,0 +1,378 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.wapper {
+  width: 1180px;
+  margin: 20px auto;
+}
+.wapper .pannle {
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+  margin-bottom: 20px;
+}
+.wapper .pannle:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-left {
+  float: left;
+  width: 210px;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+.wapper .pannle .pannle-left .left-title {
+  width: 208px;
+  border: 1px solid #c7c7c7;
+}
+.wapper .pannle .pannle-left .left-title h3 {
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #24ba80;
+}
+.wapper .pannle .pannle-left .left-title ul .li {
+  border-bottom: 1px solid #c7c7c7;
+  padding: 20px;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .pannle-left .left-title ul .li:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-left .left-title ul .li i {
+  display: inline-block;
+  float: left;
+  width: 9px;
+  height: 9px;
+  background: transparent url("images/safe.png") no-repeat 0 -172px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.wapper .pannle .pannle-left .left-title ul .li span {
+  float: left;
+  font-size: 14px;
+  color: #737373;
+}
+.wapper .pannle .pannle-left .left-title ul .li ul.silder {
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+}
+.wapper .pannle .pannle-left .left-title ul .li ul.silder li {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 30px;
+  background: transparent url("images/safe.png") no-repeat 18px -193px;
+}
+.wapper .pannle .pannle-left .left-title ul .li ul.silder li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  color: #333;
+}
+.wapper .pannle .pannle-left .left-title ul .li ul.silder li:hover a {
+  text-decoration: underline;
+}
+.wapper .pannle .pannle-right {
+  float: left;
+  width: 968px;
+  position: relative;
+  border: 1px solid #c7c7c7;
+  border-left: none;
+}
+.wapper .pannle .pannle-right .location {
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 20px;
+  color: #737373;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #c7c7c7;
+}
+.wapper .pannle .pannle-right .location span {
+  float: left;
+}
+.wapper .pannle .pannle-right .location a {
+  float: left;
+  margin: 0 8px;
+  color: #737373;
+}
+.wapper .pannle .pannle-right .location a:hover {
+  text-decoration: underline;
+  color: #007347;
+}
+.wapper .pannle .pannle-right .location i {
+  float: left;
+  font-family: SimSun;
+  font-weight: bolder;
+  line-height: 28px;
+}
+.wapper .pannle .pannle-right .location a.help {
+  float: right;
+  color: #00b971;
+  padding-left: 20px;
+  background: transparent url("images/safe.png") no-repeat 0 -229px;
+}
+.wapper .pannle .pannle-right .search-pan {
+  padding: 10px 20px;
+  position: relative;
+  height: 30px;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .pannle-right .search-pan:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-right .search-pan h3 {
+  float: left;
+  position: relative;
+  line-height: 30px;
+  font-size: 20px;
+}
+.wapper .pannle .pannle-right .search-pan .search-pannle {
+  float: right;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .pannle-right .search-pan .search-pannle:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-right .search-pan .search-pannle select {
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.wapper .pannle .pannle-right .search-pan .search-pannle input {
+  float: left;
+  height: 14px;
+  width: 160px;
+  line-height: 14px;
+  padding: 6px;
+  margin-right: 5px;
+}
+.wapper .pannle .pannle-right .search-pan .search-pannle .searct-btn {
+  float: left;
+  width: 98px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+}
+.wapper .pannle .pannle-right .query-table {
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+.wapper .pannle .pannle-right .query-table .query-title {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f8f8f8;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.wapper .pannle .pannle-right .query-table .query-title div {
+  float: left;
+  color: #777;
+  text-align: center;
+  margin-right: 10px;
+}
+.wapper .pannle .pannle-right .query-table .query-title div.name {
+  text-align: left;
+}
+.wapper .pannle .pannle-right .query-table .query-title div.operation {
+  margin-right: 0;
+}
+.wapper .pannle .pannle-right .query-table .query-box {
+  position: relative;
+  padding-bottom: 10px;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 10px;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div {
+  float: left;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.list-title {
+  width: 928px;
+  padding: 0 20px;
+  position: relative;
+  background-color: #f6f6f6;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.list-title ul {
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.list-title ul:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.list-title ul li {
+  float: left;
+  width: 309px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  color: #555;
+  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.list-title ul li a {
+  float: left;
+  margin-right: 10px;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con {
+  width: 968px;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con {
+  padding: 10px 20px;
+  height: 60px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con div {
+  float: left;
+  margin-right: 10px;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con div.operation {
+  margin-right: 0;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .name {
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .name:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .name img {
+  float: left;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .name a {
+  float: left;
+  display: inline-block;
+  width: 210px;
+  margin-left: 10px;
+  line-height: 20px;
+  max-height: 60px;
+  overflow: hidden;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .price,
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .type,
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .date {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .price span,
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .type span,
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con .date span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.table-con .product-con:last-child {
+  border-bottom: none;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.state {
+  width: 100px;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.state p {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.operation {
+  margin-right: 0;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.operation .pay-btn {
+  color: #e5340f;
+}
+.wapper .pannle .pannle-right .query-table .query-box .table-list div.operation a {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bolder;
+}
+.wapper .pannle .pannle-right .query-table .query-box .product-con:hover {
+  background-color: #f1f7f2;
+}
+.wapper .pannle .pannle-right .query-table .name {
+  width: 300px;
+}
+.wapper .pannle .pannle-right .query-table .price {
+  width: 118px;
+}
+.wapper .pannle .pannle-right .query-table .type {
+  width: 110px;
+}
+.wapper .pannle .pannle-right .query-table .date {
+  width: 140px;
+}
+.wapper .pannle .pannle-right .query-table .total {
+  width: 120px;
+}
+.wapper .pannle .pannle-right .query-table .state {
+  width: 100px;
+}
+.wapper .pannle .pannle-right .query-table .operation {
+  width: 110px;
+  margin-right: 0;
+}
+.wapper .pannle .pannle-right .page-box {
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/combined.min.css">
+    <link rel="stylesheet" type="text/css" href="../../My97DatePicker/skin/WdatePicker.css">
+    <script type="text/javascript" src="../../My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+</head>
+<body>
+<!--页头部分-->
+<div class="header">
+    @@include("../common/header.html")
+</div>
+<div class="wapper">
+    <!--当前位置-->
+    <div class="location">
+        <span>当前位置：</span><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a>
+    </div>
+    <!--筛选部分-->
+    <div class="combined-box">
+        <div class="combined-title" id="combinedTitle">
+            <ul>
+                <li class="active">票务（88）</li>
+                <li>酒店（88）</li>
+                <li>度假（88）</li>
+                <li>餐饮（88）</li>
+                <li>特产（88）</li>
+            </ul>
+        </div>
+        <div class="combined-con" id="combinedCon">
+            <div class="travel-date"><span>出游时间：</span><input type="text" class="Wdate" onclick="WdatePicker()"></div>
+            <div class="travel-num">
+                <span>出游人数：</span>
+                <div class="num-box">
+                    <div class="num-oper">
+                        <a href="javascript:;" class="num-pre"></a>
+                        <input type="text" class="num-input" value="0" text="0" id="totalNum">
+                        <a href="javascript:;" class="num-next"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="order-table" id="table" >
+                <div class="table-title">
+                    <div class="choose"><input type="checkbox" class="choose-all" id="chooseAll"><label for="chooseAll">全选</label></div>
+                    <div class="name">商品名称</div>
+                    <div class="date">演出场次</div>
+                    <div class="ticket">余票</div>
+                    <div class="type">游客类型</div>
+                    <div class="num">数量</div>
+                    <div class="price">价格</div>
+                    <div class="operation">操作</div>
+                </div>
+                <div class="table-box">
+                    <div class="table-list">
+                        <div class="choose"><input type="checkbox" name="check"></div>
+                        <div class="name"><a href="javascript:;" class="dodt">青城山套票</a></div>
+                        <div class="date">
+                            <select>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                            </select>
+                        </div>
+                        <div class="ticket"><span>1212</span></div>
+                        <div class="type"><span>成人</span></div>
+                        <div class="num fi">
+                            <div class="num-oper">
+                                <a href="javascript:;" class="num-pre"></a>
+                                <input type="text" class="num-input" value="0" text="0" maxnum="10" minnum="0">
+                                <a href="javascript:;" class="num-next"></a>
+                            </div>
+                        </div>
+                        <div class="price"><span class="dodt">￥190</span></div>
+                        <div class="operation">
+                            <a href="javascript:;" class="more">更多</a>
+                        </div>
+                        <div class="list-details">
+                            <span class="list-icon"></span>
+                            <div class="product-details">
+                                <p>您最晚要在当天16:00前下单，请尽早预订，以免耽误行程。</p>
+                                <p>凭供应商数字凭证码至指定位置换票。若未收取到请致电028-87122973</p>
+                                <p>该产品支持随时定，如需退订，请登录账户申请取消，经核实未使用，可免费取消。如需改期，请申请取消。</p>
+                            </div>
+                        </div>
+                        <div class="list-box">
+                            <div class="list-list">
+                                <div class="type"><span>成人</span></div>
+                                <div class="num">
+                                    <div class="num-oper">
+                                        <a href="javascript:;" class="num-pre"></a>
+                                        <input type="text" class="num-input" value="0" text="0" maxnum="10" minnum="0">
+                                        <a href="javascript:;" class="num-next"></a>
+                                    </div>
+                                </div>
+                                <div class="price"><span class="dodt">￥190</span></div>
+                                <div class="operation">
+                                    <a href="javascript:;" class="pur">更多</a>
+                                </div>
+                            </div>
+                            <div class="list-list">
+                                <div class="type"><span>成人</span></div>
+                                <div class="num">
+                                    <div class="num-oper">
+                                        <a href="javascript:;" class="num-pre"></a>
+                                        <input type="text" class="num-input" value="0" text="0" maxnum="10" minnum="0">
+                                        <a href="javascript:;" class="num-next"></a>
+                                    </div>
+                                </div>
+                                <div class="price"><span class="dodt">￥190</span></div>
+                                <div class="operation">
+                                    <a href="javascript:;" class="pur">更多</a>
+                                </div>
+                            </div>
+                            <div class="list-list">
+                                <div class="type"><span>成人</span></div>
+                                <div class="num">
+                                    <div class="num-oper">
+                                        <a href="javascript:;" class="num-pre"></a>
+                                        <input type="text" class="num-input" value="0" text="0" maxnum="10" minnum="0">
+                                        <a href="javascript:;" class="num-next"></a>
+                                    </div>
+                                </div>
+                                <div class="price"><span class="dodt">￥190</span></div>
+                                <div class="operation">
+                                    <a href="javascript:;" class="pur">更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order-box">
+        <div class="choose-box">
+            <input type="checkbox" class="choose-all"  id="chooseTotal"><label for="chooseTotal">全选</label>
+        </div>
+        <div class="order-details">
+            <span>已选<b>1</b>件商品</span>
+            <span>订单总价：<b>￥156</b></span>
+            <a href="javascript:;" class="next-btn">下一步</a>
+        </div>
+    </div>
+    <!--页脚部分-->
+    <div class="footer">
+        @@include("../common/footer.html")
+    </div>
+</div>
+<script type="text/javascript" src="../../js/control/common.js"></script>
+<script type="text/javascript" src="../../js/control/cart.js"></script>
+<script>
+    $(document).ready(function(){
+        var oTable=$("#table"),
+            oTotal=$("#totalNum");
+
+        oTable.delegate(".name","mouseover",function(){
+            $(this).siblings(".list-details").css("display","block");
+        });
+
+        oTable.delegate(".name","mouseout",function(){
+            var obj=$(this);
+            setTimeout(function(){
+                obj.siblings(".list-details").css("display","none");
+            },100);
+        });
+
+        oTable.delegate(".list-details","mouseover",function(){
+            $(this).css("display","block");
+        });
+        oTable.delegate(".list-details","mouseout",function(){
+            $(this).css("display","none");
+        });
+
+        oTable.delegate(".more","click",function(){
+            $(this).parent().siblings(".list-box").slideToggle();
+        });
+
+
+        oTable.delegate(".choose-all","click",function(){
+            $(".num-input").val(oTotal.val());
+        });
+
+        oTable.delegate("input[name='check']","click",function(){
+            var obj=$(this).closest(".table-list").find(".fi .num-input");
+            if($(this).is(":checked") && parseInt(obj.val())==0){
+                obj.val(oTotal.val());
+                if(oTotal.val()>0){
+                    obj.prev().addClass("num-pre-active");
+                }
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

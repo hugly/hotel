@@ -1,0 +1,84 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.wapper {
+  width: 1200px;
+  margin: 20px auto;
+}
+.wapper .pannle {
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-left {
+  float: left;
+  width: 600px;
+  height: 500px;
+  background: transparent url("images/404.jpg") no-repeat right center;
+}
+.wapper .pannle .pannle-right {
+  float: left;
+  width: 500px;
+  height: 300px;
+  padding: 100px 50px;
+}
+.wapper .pannle .pannle-right h3 {
+  font-size: 20px;
+  color: #00d6a6;
+  line-height: 30px;
+}
+.wapper .pannle .pannle-right h1 {
+  font-size: 60px;
+  color: #737373;
+  margin-top: -18px;
+}
+.wapper .pannle .pannle-right p {
+  font-size: 30px;
+  color: #737373;
+  padding: 5px 0;
+}
+.wapper .pannle .back {
+  position: absolute;
+  right: 430px;
+  bottom: 120px;
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  background-color: #00d6a6;
+  border: 1px solid #15a671;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.wapper .footer-box {
+  width: 960px;
+  margin: 40px auto 0;
+}
+.wapper .footer-box .footer {
+  color: #737373;
+}
+.wapper .footer-box .footer .footer-top {
+  text-align: center;
+}
+.wapper .footer-box .footer .footer-top a {
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+}
+.wapper .footer-box .footer .footer-copy {
+  text-align: center;
+  margin-top: 10px;
+}

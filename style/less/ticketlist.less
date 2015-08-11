@@ -1,0 +1,133 @@
+@import "lib.less";
+
+.wapper{ width: 1180px; margin: 20px auto;
+  .pannle{ position: relative; .cf();
+    .pannle-left{ float: left; width: 210px;position: relative; margin-bottom: 20px; box-shadow: 2px 2px 2px #ccc;
+      .left-title{ width: 208px; border: 1px solid #c7c7c7;
+        h3{ padding-left: 20px; height: 40px; line-height: 40px; font-size: 18px; color: #fff; background-color: #24ba80;}
+        ul{
+          .li{ border-bottom: 1px solid #c7c7c7; padding: 20px; .cf();
+            i{ display: inline-block; float: left; width: 9px; height: 9px; .bg("../images/safe.png",no-repeat,0 -172px); margin-top: 3px; margin-right: 5px;}
+            span{ float: left; font-size: 14px; color: #737373;}
+            ul.silder{ padding: 10px 0; float: left; width: 100%;
+              li{ height: 30px; line-height: 30px; padding-left: 30px; .bg("../images/safe.png",no-repeat,18px -193px);
+                a{ display: block; width: 100%; height: 100%; font-size: 12px; color: #333;}
+              }
+              li:hover{
+                a{ text-decoration: underline;}
+              }
+            }
+          }
+        }
+      }
+    }
+    .pannle-right{ float: left; width: 968px; position: relative; border: 1px solid #c7c7c7; border-left: none;
+      .location{ height: 30px; line-height: 30px; padding: 10px 20px; color: #737373; position: relative; overflow: hidden; border-bottom: 1px solid #c7c7c7;
+        span{ float: left;}
+        a{ float: left; margin: 0 8px; color: #737373;}
+        a:hover{ text-decoration: underline; color: #007347;}
+        i{ float: left; font-family: SimSun; font-weight: bolder; line-height: 28px;}
+        a.help{ float: right; color: #00b971; padding-left: 20px; .bg("../images/safe.png",no-repeat,0 -229px);}
+      }
+      .search-pan{ padding: 10px 20px; position: relative; height: 30px; .cf();
+        input{ float: left; width: 240px; height: 14px; margin-right: 10px; line-height: 14px; padding: 7px; border: 1px solid #cfcfcf;}
+        button{ float: left; width: 60px; height: 30px; border: 1px solid #ccc; background-color: #fbfbfb; color: #333; cursor: pointer;}
+        span{ float: left; line-height: 30px; color: #969ea1; margin-left: 10px;}
+        a{ float: left; line-height: 30px; color: #969ea1; margin: 0 5px;}
+        a:hover{ color: #e5340f;}
+      }
+      .screen-con{ width: 967px; height: auto; border: 1px solid #d2d7de; background-color: #fff; position: relative;
+        .active{}
+        .screen-list{ padding: 20px 0;
+          ul{ position: relative;
+            li{ border-bottom: 1px dashed #e9e9e9; line-height: 40px; padding: 0 20px; position: relative; overflow: hidden;
+              span{ float: left; width: 60px; text-align: right;}
+              .option{ float: left; width: 860px; position: relative; overflow: hidden;
+                a{ display: inline-block; height: 20px; line-height: 20px; padding: 0 8px;  margin: 0 8px;
+                  b{ color: #179251;}
+                }
+                a.active{ background-color: #f90; color: #fff;
+                  b{ color: #fff;}
+                }
+              }
+              .choosed{ display: inline-block;  float:left; margin-top: 10px; margin-left: 8px; height: 18px; line-height: 20px; border-radius: 4px; border: 1px solid #f90; position: relative; overflow: hidden;
+                span{ float: left; background-color: #f90; color: #fff; text-align: center; width: auto; padding: 0 10px;}
+                b{ float: left; padding: 0 10px;}
+                i{ float: left; display: inline-block; width: 20px; text-align: center; font-size: 16px; color: #f90; cursor: pointer;}
+              }
+              .clear:hover{ color: #c00; }
+              .total{ float: none;
+                b{ color: #179251; margin: 0 5px;}
+              }
+            }
+            li#total{
+              a:hover{ color: #c00;}
+              a.active{ background-color: #fff; color: #303030;};
+            }
+          }
+        }
+      }
+      .sort-box{ height: 34px; line-height: 34px; border-bottom: 1px solid #d2d7de; background-color: #f5f6fa; margin-bottom: 10px; padding: 0 20px; position: relative; overflow: hidden;
+        span{ float: left;}
+        a{ float: left; display: inline-block; padding: 0 20px 0 15px; margin: 0 10px; position: relative;
+          i{ display: inline-block; position: absolute; top: 10px; right: 8px; width: 10px; height: 12px; background: url("../css/images/screen.png") no-repeat 0 -27px;}
+        }
+        a.active{ background-color: #f90; color: #fff;
+          i{ background-position: 0 -13px;}
+        }
+      }
+      .order-table{ width: 100%; position: relative; border-top: 1px solid #ccc;
+        .table-title{ height: 30px; line-height: 30px; border-bottom: 1px solid #ccc; background-color: #f8f8f8; position: relative; overflow: hidden; padding-left: 20px;
+          div{ float: left; color: #777; text-align: left;}
+          div.price{ text-align: center;}
+          div.operation{ text-align: center;}
+        }
+        .table-box{ position: relative; padding-bottom: 10px; z-index: 99;
+          .table-list{ position: relative; .cf(); padding-left: 20px; line-height: 40px; border-bottom: 1px dashed #ccc;
+            div{ float: left;  height: 40px;}
+            div.name a{ display: block; width: 100%; height: 100%; color: #179251; font-weight: bold; box-sizing: border-box; padding-right: 20px;
+              span{ display: inline-block; width: 16px; height: 9px; margin-left: 5px; background: url("../css/images/details.png") no-repeat -105px -57px;}
+              span.down{ background-position: -105px -47px;}
+            }
+            div.date input{ width: 100px;}
+            div.product span{ display: block; width: 100%; height: 100%;}
+            div.price span{  color: #f05600; display: block; width: 100%; height: 100%; font-weight: bolder;}
+            div.lineprice input{ width: 80px; }
+            div.type select{ width: 120px;}
+            div.num .num-oper{ position: relative; overflow: hidden; width: 100%; height: 100%; padding-top: 8px;
+              .num-pre{ float: left; width: 24px; height: 24px; background: url("../css/images/details.png") no-repeat 0 -185px;}
+              .num-pre-active {background-position:-25px -185px}
+              .num-input{ float: left; width: 40px; height: 14px; line-height: 14px; padding: 3px 10px; color: #333; margin: 0 5px;}
+              .num-next{ float: left; width: 24px; height: 24px; background: url("../css/images/details.png") no-repeat -25px -156px;}
+              .num-next-active{}
+            }
+            div.operation{ position: relative; overflow: hidden; text-align: center;
+              a{ color: #f05600; font-weight: bolder;}
+            }
+            div.list-details{ width: 390px; height: auto; border: 1px solid #ccc; margin-bottom: 20px; position: absolute; top:40px; padding: 10px 20px; display: none; z-index: 100; background-color: #fff;
+              .list-icon{ display: inline-block; width: 17px; height: 9px; position: absolute; left: 30px; top: -9px; background-image: url("../css/images/details.png"); background-repeat: no-repeat; background-position: -104px -33px;}
+              .product-details{ width: 100%; position: relative; overflow: hidden; height: auto;
+                span{ float: left; width: 120px; color: #999;}
+                p{ float: left; width: 390px; color: #333; line-height: 30px;}
+              }
+            }
+            div.list-box{ width: 496px; height: auto; float: right; display: none;
+              .list-list{ border-top: 1px dashed #e6e6e6;}
+            }
+          }
+          .table-list:hover{ background-color: #f1f7f2;
+            .list-details{ background-color: #fff;}
+          }
+        }
+        .name{ width: 150px;}
+        .product{ width: 180px;}
+        .price{ width: 80px; text-align: center;}
+        .date{ width: 120px;}
+        .type{ width: 120px;}
+        .num{ width: 150px;}
+        .operation{ width: 146px; text-align: center;}
+      }
+      .page-box{ height: 30px; margin-top: 15px; margin-left: 20px; position: relative;}
+    }
+  }
+}

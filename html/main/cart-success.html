@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/cart-success.min.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+</head>
+<body>
+<!--页头部分-->
+<div class="header">
+    @@include("../common/header.html")
+</div>
+<!--正文部分-->
+<div class="wapper">
+    <!--中间内容部分-->
+    <div class="pannel">
+        <!--左侧内容部分-->
+        <div class="pannel-left">
+            <div class="content">
+                <div class="ok"><i></i><span>商品已成功加入购物车！</span></div>
+                <div class="control">
+                    <a herf="javascript:;" class="goadd">继续添加</a>
+                    <a herf="javascript:;" class="pay">去购物车结算</a>
+                </div>
+            </div>
+        </div>
+        <!--右侧部分内容-->
+        <div class="pannel-right">
+            @@include("../common/cart.html")
+        </div>
+    </div>
+    <!--页脚部分-->
+    <div class="footer">
+        @@include("../common/footer.html")
+    </div>
+</div>
+</body>
+</html>

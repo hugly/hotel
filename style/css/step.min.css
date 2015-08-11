@@ -1,0 +1,677 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.header .header-box {
+  width: 960px;
+}
+.pannle {
+  width: 958px;
+  border: 1px solid #ccc;
+  margin: 60px auto;
+  box-shadow: 2px 2px 2px #ccc;
+}
+.pannle .ok {
+  display: none;
+  float: left;
+  width: 24px;
+  height: 18px;
+  background: transparent url("images/ok.png") no-repeat 0 0;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+.pannle .process {
+  height: 8px;
+  width: 500px;
+  margin: 40px 229px;
+  border-radius: 5px;
+  background-color: #c6c6c6;
+  z-index: 0;
+}
+.pannle .process .lin {
+  height: 8px;
+  width: 166px;
+  background-color: #00b971;
+  border-radius: 5px;
+  z-index: 1;
+}
+.pannle .process .number {
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+  z-index: 3;
+  margin-top: -15px;
+}
+.pannle .process .number:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .process .number div.active span {
+  background-color: #00b971;
+}
+.pannle .process .number div.active p {
+  color: #00b971;
+}
+.pannle .process .number .step {
+  float: left;
+  width: 166px;
+  text-align: center;
+}
+.pannle .process .number .step span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin-bottom: 12px;
+  text-align: center;
+  background-color: #c6c6c6;
+  color: #fff;
+  border-radius: 50%;
+}
+.pannle .process .number .step p {
+  color: #ababab;
+}
+.pannle .step1-box {
+  padding: 50px 229px;
+}
+.pannle .step1-box .list {
+  height: 40px;
+  min-height: 1px;
+  zoom: 1;
+  margin-bottom: 20px;
+}
+.pannle .step1-box .list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .step1-box .list span {
+  float: left;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.pannle .step1-box .list input {
+  float: left;
+  height: 14px;
+  line-height: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #999;
+}
+.pannle .step1-box .list input.account {
+  width: 260px;
+}
+.pannle .step1-box .list input.yanzhengma {
+  width: 80px;
+}
+.pannle .step1-box .list input:focus {
+  border-color: #00b971;
+  color: #333;
+}
+.pannle .step1-box .list img {
+  float: left;
+  display: inline-block;
+  width: 90px;
+  height: 36px;
+  margin: 0 5px;
+}
+.pannle .step1-box .list i {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #737373;
+}
+.pannle .step1-box .list a {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #5caae6;
+  font-weight: bolder;
+}
+.pannle .step1-box .next-step {
+  position: relative;
+  margin-top: 20px;
+}
+.pannle .step1-box .next-step a {
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #00a665;
+  background-color: #00b971;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 120px;
+}
+.pannle .step2-box .mothod {
+  padding: 50px 229px;
+  border-top: 1px solid #e6e6e6;
+  position: relative;
+}
+.pannle .step2-box .mothod h3 {
+  display: inline-block;
+  font-size: 14px;
+  color: #e5340f;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.pannle .step2-box .mothod .list {
+  height: 40px;
+  min-height: 1px;
+  zoom: 1;
+  margin-bottom: 20px;
+}
+.pannle .step2-box .mothod .list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .step2-box .mothod .list span {
+  float: left;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.pannle .step2-box .mothod .list input {
+  float: left;
+  height: 14px;
+  line-height: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #999;
+}
+.pannle .step2-box .mothod .list input.account {
+  width: 260px;
+}
+.pannle .step2-box .mothod .list input.yanzhengma {
+  width: 80px;
+}
+.pannle .step2-box .mothod .list input:focus {
+  border-color: #00b971;
+  color: #333;
+}
+.pannle .step2-box .mothod .list img {
+  float: left;
+  display: inline-block;
+  width: 90px;
+  height: 36px;
+  margin: 0 5px;
+}
+.pannle .step2-box .mothod .list i {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #737373;
+}
+.pannle .step2-box .mothod .list a {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #5caae6;
+  font-weight: bolder;
+}
+.pannle .step2-box .mothod .list a.seconds {
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #00b971;
+}
+.pannle .step2-box .mothod .list a.actived {
+  background-color: #efefef;
+  color: #737373;
+}
+.pannle .step2-box .mothod .next-step {
+  position: relative;
+  margin-top: 20px;
+}
+.pannle .step2-box .mothod .next-step a {
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #00a665;
+  background-color: #00b971;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 120px;
+}
+.pannle .step3-box {
+  padding: 50px 229px;
+}
+.pannle .step3-box .list {
+  height: 40px;
+  min-height: 1px;
+  zoom: 1;
+}
+.pannle .step3-box .list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .step3-box .list span {
+  float: left;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.pannle .step3-box .list input {
+  float: left;
+  height: 14px;
+  line-height: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #999;
+}
+.pannle .step3-box .list input.account {
+  width: 260px;
+}
+.pannle .step3-box .list input.yanzhengma {
+  width: 260px;
+}
+.pannle .step3-box .list input:focus {
+  border-color: #00b971;
+  color: #333;
+}
+.pannle .step3-box .list img {
+  float: left;
+  display: inline-block;
+  width: 90px;
+  height: 36px;
+  margin: 0 5px;
+}
+.pannle .step3-box .list i {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #737373;
+}
+.pannle .step3-box .list a {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #5caae6;
+  font-weight: bolder;
+}
+.pannle .step3-box .safe {
+  margin-bottom: 20px;
+  padding: 0 98px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.pannle .step3-box .safe:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .step3-box .safe .degree {
+  float: right;
+  height: 20px;
+  line-height: 20px;
+  min-height: 1px;
+  zoom: 1;
+}
+.pannle .step3-box .safe .degree:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .step3-box .safe .degree span {
+  float: left;
+  margin-right: 10px;
+}
+.pannle .step3-box .safe .degree i {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  background-color: #b4b4b4;
+  color: #fff;
+  margin-left: 1px;
+}
+.pannle .step3-box .safe .degree i.active {
+  background-color: #fc280e;
+}
+.pannle .step3-box .next-step {
+  position: relative;
+  margin-top: 20px;
+}
+.pannle .step3-box .next-step a {
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #00a665;
+  background-color: #00b971;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 120px;
+}
+.pannle .title {
+  height: 40px;
+  min-height: 1px;
+  zoom: 1;
+  margin-top: -40px;
+  margin-left: 250px;
+}
+.pannle .title:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .title span {
+  float: left;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 118px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.pannle .title span.active {
+  background-color: #fff;
+  border-bottom: none;
+  margin-top: 1px;
+}
+.pannle .register-box {
+  padding: 50px 129px;
+  display: none;
+}
+.pannle .register-box .list {
+  height: 40px;
+  min-height: 1px;
+  zoom: 1;
+  margin-top: 20px;
+  position: relative;
+}
+.pannle .register-box .list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .register-box .list span {
+  float: left;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.pannle .register-box .list input {
+  float: left;
+  height: 14px;
+  line-height: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #999;
+}
+.pannle .register-box .list input.account {
+  width: 260px;
+}
+.pannle .register-box .list input.yanzhengma {
+  width: 80px;
+}
+.pannle .register-box .list input:focus {
+  border-color: #00b971;
+  color: #333;
+}
+.pannle .register-box .list img {
+  float: left;
+  display: inline-block;
+  width: 90px;
+  height: 36px;
+  margin: 0 5px;
+}
+.pannle .register-box .list i {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #737373;
+}
+.pannle .register-box .list a {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #5caae6;
+  font-weight: bolder;
+}
+.pannle .register-box .list a.seconds {
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #00b971;
+}
+.pannle .register-box .list a.actived {
+  background-color: #efefef;
+  color: #737373;
+}
+.pannle .register-box .list #reg {
+  margin-left: 118px;
+}
+.pannle .register-box .list #reg1 {
+  margin-left: 118px;
+}
+.pannle .register-box .list #reg2 {
+  margin-left: 118px;
+}
+.pannle .register-box .list label {
+  margin-left: 5px;
+}
+.pannle .register-box .list label b {
+  color: #e5340f;
+}
+.pannle .register-box .list .error {
+  display: none;
+  min-height: 1px;
+  zoom: 1;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #e5340f;
+  max-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.pannle .register-box .list .error:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .register-box .list .error i {
+  float: left;
+  width: 24px;
+  height: 18px;
+  background: transparent url("images/msg.png") no-repeat 0 -23px;
+  margin: 8px 0 0 6px;
+}
+.pannle .register-box .list .tips {
+  display: none;
+  float: left;
+  padding: 0 5px;
+  height: 34px;
+  line-height: 36px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  position: relative;
+}
+.pannle .register-box .list .tips i {
+  display: inline-block;
+  position: absolute;
+  left: -13px;
+  top: 12px;
+  width: 8px;
+  height: 11px;
+  background: transparent url("images/msg.png") no-repeat 0 -51px;
+}
+.pannle .register-box .safe {
+  margin-bottom: 20px;
+  padding-right: 300px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.pannle .register-box .safe:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .register-box .safe .degree {
+  float: right;
+  height: 20px;
+  line-height: 20px;
+  min-height: 1px;
+  zoom: 1;
+}
+.pannle .register-box .safe .degree:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pannle .register-box .safe .degree span {
+  float: left;
+  margin-right: 10px;
+}
+.pannle .register-box .safe .degree i {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  background-color: #b4b4b4;
+  color: #fff;
+  margin-left: 1px;
+}
+.pannle .register-box .safe .degree i.active {
+  background-color: #fc280e;
+}
+.pannle .register-box .next-step {
+  position: relative;
+  margin-top: 20px;
+}
+.pannle .register-box .next-step a {
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #00a665;
+  background-color: #00b971;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 120px;
+}
+.footer-box {
+  width: 960px;
+  margin: 40px auto 0;
+}
+.footer-box .footer {
+  color: #737373;
+}
+.footer-box .footer .footer-top {
+  text-align: center;
+}
+.footer-box .footer .footer-top a {
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+}
+.footer-box .footer .footer-copy {
+  text-align: center;
+  margin-top: 10px;
+}

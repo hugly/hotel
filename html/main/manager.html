@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/manager.min.css">
+    <link rel="stylesheet" type="text/css" href="../../My97DatePicker/skin/WdatePicker.css">
+    <script type="text/javascript" src="../../My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+    <script type="text/javascript" src="../../js/lib/placeholder.js"></script>
+</head>
+<body>
+<!--页头部分-->
+<div class="header">
+    @@include("../common/header.html")
+</div>
+<!--正文部分-->
+<div class="wapper">
+    <!--正文部分-->
+    <div class="pannle">
+        <!--左侧部分-->
+        <div class="pannle-left">
+            <div class="left-title">
+                <h3>会员中心</h3>
+                <ul>
+                    <li class="li">
+                        <i></i><span>订单管理</span>
+                        <ul class="silder">
+                            <li><a href="javascript:;">订单管理</a></li>
+                            <li><a href="javascript:;">退单处理</a></li>
+                        </ul>
+                    </li>
+                    <li class="li">
+                        <i></i><span>账号管理</span>
+                        <ul class="silder">
+                            <li><a href="javascript:;">账号信息</a></li>
+                            <li><a href="javascript:;">账号安全</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--右侧部分-->
+        <div class="pannle-right">
+            <!--当前位置-->
+            <div class="location">
+                <span>当前位置：</span><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a>
+                <a href="javascript:;" class="help">查看帮助</a>
+            </div>
+            <!--搜索菜单-->
+            <div class="search-pan">
+                <div class="search-pannle">
+                    <a href="javascript:;" class="add-per">添加人员</a>
+                    <input type="text" placeholder="手机/邮箱/身份证"/>
+                    <a href="javascript:;" class="searct-btn">查询</a>
+                </div>
+            </div>
+            <!--门票列表-->
+            <div class="query-table" id="query" >
+                <div class="query-title">
+                    <div class="name">姓名</div>
+                    <div class="card">身份证</div>
+                    <div class="phone">手机</div>
+                    <div class="mail">邮箱</div>
+                    <div class="operation">操作</div>
+                </div>
+                <div class="query-box">
+                    <div class="table-list">
+                        <div class="name">
+                            <span>张某某</span>
+                        </div>
+                        <div class="card">
+                            <span>511111111111111111</span>
+                        </div>
+                        <div class="phone">
+                            <span>13333333333</span>
+                        </div>
+                        <div class="mail">
+                            <span>1111111@mail.com</span>
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:;">移除</a>
+                        </div>
+                    </div>
+                    <div class="table-list">
+                        <div class="name">
+                            <span>张某某</span>
+                        </div>
+                        <div class="card">
+                            <span>511111111111111111</span>
+                        </div>
+                        <div class="phone">
+                            <span>13333333333</span>
+                        </div>
+                        <div class="mail">
+                            <span>1111111@mail.com</span>
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:;">移除</a>
+                        </div>
+                    </div>
+                    <div class="table-list">
+                        <div class="name">
+                            <span>张某某</span>
+                        </div>
+                        <div class="card">
+                            <span>511111111111111111</span>
+                        </div>
+                        <div class="phone">
+                            <span>13333333333</span>
+                        </div>
+                        <div class="mail">
+                            <span>1111111@mail.com</span>
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:;">移除</a>
+                        </div>
+                    </div>
+                    <div class="table-list">
+                        <div class="name">
+                            <span>张某某</span>
+                        </div>
+                        <div class="card">
+                            <span>511111111111111111</span>
+                        </div>
+                        <div class="phone">
+                            <span>13333333333</span>
+                        </div>
+                        <div class="mail">
+                            <span>1111111@mail.com</span>
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:;">移除</a>
+                        </div>
+                    </div>
+                    <div class="table-list">
+                        <div class="name">
+                            <span>张某某</span>
+                        </div>
+                        <div class="card">
+                            <span>511111111111111111</span>
+                        </div>
+                        <div class="phone">
+                            <span>13333333333</span>
+                        </div>
+                        <div class="mail">
+                            <span>1111111@mail.com</span>
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:;">移除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--页码-->
+            <div class="page-box">
+                @@include("../common/page.html")
+            </div>
+        </div>
+    </div>
+    <!--页脚部分-->
+    <div class="footer">
+        @@include("../common/footer.html")
+    </div>
+</div>
+<div class="add-park" id="addPark">
+    <div class="add-title">
+        <h3>新增成员</h3>
+        <a href="javascript:;" class="close-btn"></a>
+    </div>
+    <div class="add-box">
+        <div class="search-pannle">
+            <input type="text" placeholder="手机/邮箱/身份证"/>
+            <a href="javascript:;" class="searct-btn">查询</a>
+        </div>
+        <div class="bind-box">
+            <div class="bind-list-title">
+                <div class="name">姓名</div>
+                <div class="number">身份证号码</div>
+                <div class="phone">手机号码</div>
+                <div class="operation">操作</div>
+            </div>
+            <div class="bind-list-box" id="bindBox">
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">添加</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-box">
+        @@include("../common/page.html")
+    </div>
+</div>
+<div class="zoom" id="zoom"></div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var oZoom=$("#zoom"),
+            oAdd=$("#addPark"),
+            oLeft=$(".left-title"),
+            oRight=$(".pannle-right");
+        if(oRight.height()>oLeft.height()){
+            oLeft.height(oRight.height());
+        }else{
+            oRight.height(oLeft.height());
+        }
+
+        $(function() {
+            $('input, textarea').placeholder();
+        });
+
+        $(".add-per").on("click",function(){
+            oZoom.css({display:"block"});
+            oAdd.css({display:"block"});
+        });
+
+        oAdd.find(".close-btn").on("click",function(){
+            oZoom.css({display:"none"});
+            oAdd.css({display:"none"});
+        });
+    });
+</script>
+</body>
+</html>

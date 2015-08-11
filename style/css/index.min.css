@@ -1,0 +1,74 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.header {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.wapper {
+  width: 1180px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+.wapper .silder {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.wapper .silder .tickets {
+  float: left;
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+  position: relative;
+}
+.wapper .silder .banner-box {
+  float: left;
+  width: 760px;
+  position: relative;
+}
+.wapper .pannel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.wapper .pannel .pannel-left {
+  float: left;
+  width: 230px;
+  margin-right: 20px;
+  position: relative;
+}
+.wapper .pannel .pannel-left .spots {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.wapper .pannel .pannel-left .sellers {
+  width: 100%;
+  position: relative;
+}
+.wapper .pannel .pannel-right {
+  float: left;
+  width: 930px;
+  position: relative;
+}
+.wapper .pannel .pannel-right .recommend {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.wapper .pannel .pannel-right .package {
+  width: 100%;
+  position: relative;
+}
+.wapper .footer {
+  width: 100%;
+  position: relative;
+}

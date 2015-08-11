@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/account.min.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+</head>
+<body>
+<!--页头部分-->
+<div class="header">
+    @@include("../common/header.html")
+</div>
+<!--正文部分-->
+<div class="wapper">
+    <!--正文部分-->
+    <div class="pannle">
+        <!--左侧部分-->
+        <div class="pannle-left">
+            <div class="left-title">
+                <h3>会员中心</h3>
+                <ul>
+                    <li class="li">
+                        <i></i><span>订单管理</span>
+                        <ul class="silder">
+                            <li><a href="javascript:;">订单管理</a></li>
+                            <li><a href="javascript:;">退单处理</a></li>
+                        </ul>
+                    </li>
+                    <li class="li">
+                        <i></i><span>账号管理</span>
+                        <ul class="silder">
+                            <li><a href="javascript:;">账号信息</a></li>
+                            <li><a href="javascript:;">账号安全</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--右侧部分-->
+        <div class="pannle-right">
+            <!--当前位置-->
+            <div class="location">
+                <span>当前位置：</span><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a>
+                <a href="javascript:;" class="help">查看帮助</a>
+            </div>
+            <!--账户信息-->
+            <div class="account">
+                <div class="account-list">
+                    <span>用户名</span>
+                    <span>18989898989</span>
+                </div>
+                <div class="account-list">
+                    <span>状态</span>
+                    <input type="text" class="status">
+                </div>
+                <div class="account-list">
+                    <span>昵称</span>
+                    <input type="text" class="name">
+                </div>
+                <div class="account-list">
+                    <span>性别</span>
+                    <div class="sex-box">
+                        <input type="radio" name="sex" id="man"><label for="man">男</label>
+                        <input type="radio" name="sex" id="woman"><label for="woman">女</label>
+                    </div>
+                </div>
+                <div class="account-list">
+                    <span>职业</span>
+                    <input type="text" class="work">
+                </div>
+                <div class="account-list">
+                    <span>护照</span>
+                    <input type="text" class="passport">
+                </div>
+                <div class="account-list">
+                    <span>邮寄地址</span>
+                    <input type="text" class="address long">
+                </div>
+                <div class="account-list">
+                    <span>创建时间</span>
+                    <input type="text" class="create-time long" readonly>
+                </div>
+                <div class="account-list">
+                    <span>qq号码</span>
+                    <input type="text" class="qq">
+                </div>
+                <div class="account-list">
+                    <span>MSN</span>
+                    <input type="text" class="msn">
+                </div>
+                <div class="account-list">
+                    <span>Twitter</span>
+                    <input type="text" class="twitter">
+                </div>
+                <div class="account-list">
+                    <span>新浪微博</span>
+                    <input type="text" class="weibo long">
+                </div>
+                <div class="account-list">
+                    <span>腾讯微博</span>
+                    <input type="text" class="tencent long">
+                </div>
+                <div class="account-list">
+                    <span>facebook</span>
+                    <input type="text" class="facebook long">
+                </div>
+                <div class="account-list">
+                    <span>爱好</span>
+                    <input type="text" class="hobby long">
+                </div>
+                <div class="account-list">
+                    <span>个性签名</span>
+                    <input type="text" class="indivi long">
+                </div>
+                <div class="account-list">
+                    <span>最后登录时间</span>
+                    <input type="text" class="last-time long" readonly>
+                </div>
+                <div class="account-list remark">
+                    <span>备注</span>
+                    <textarea class="remark"></textarea>
+                </div>
+                <div class="head">
+                    <img src="../../style/css/images/header.png">
+                    <a href="javascript:;">添加头像</a>
+                </div>
+                <div class="save">
+                    <a href="javascript:;">保存</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页脚部分-->
+    <div class="footer">
+        @@include("../common/footer.html")
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import "lib.less";
+
+.header{
+  .header-box{ width: 960px;}
+}
+.pannle{ width: 958px; border:1px solid #ccc; margin: 60px auto; box-shadow: 2px 2px 2px #ccc;
+  .ok{ display: none; float: left; width: 24px; height: 18px; .bg("../images/ok.png",no-repeat,0 0); margin-left: 10px; margin-top: 6px;}
+  .process{ height: 8px; width: 500px; margin: 40px 229px; border-radius: 5px; background-color: #c6c6c6; z-index: 0;
+    .lin{ height: 8px; width: 166px; background-color: #00b971; border-radius: 5px; z-index: 1;}
+    .number{ position: relative; .cf(); z-index: 3; margin-top: -15px;
+      div.active{
+        span{ background-color: #00b971;}
+        p{ color: #00b971;}
+      }
+      .step{ float: left; width: 166px; text-align: center;
+        span{ display: inline-block; width: 22px; height: 22px; line-height: 22px; margin-bottom: 12px; text-align: center; background-color: #c6c6c6; color: #fff; border-radius: 50%;}
+        p{ color: #ababab;}
+      }
+    }
+  }
+  .step1-box{ padding: 50px 229px;
+    .list{ height: 40px; .cf(); margin-bottom: 20px;
+      span{ float: left; display: inline-block; width: 100px; height: 40px; line-height: 40px; margin-right: 20px; text-align: right; font-size: 14px; .omit(); }
+      input{ float: left; height: 14px; line-height: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; color: #999;}
+      input.account{ width: 260px;}
+      input.yanzhengma{ width: 80px;}
+      input:focus{ border-color: #00b971; color: #333;}
+      img{ float: left; display: inline-block; width: 90px; height: 36px; margin: 0 5px; }
+      i{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #737373; }
+      a{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #5caae6; font-weight: bolder; }
+    }
+    .next-step{ position: relative; margin-top: 20px;
+      a{ display: inline-block; width: 270px; height: 30px; line-height: 30px; border: 1px solid #00a665; background-color: #00b971; text-align: center; color: #fff; border-radius: 5px; margin-left: 120px;}
+    }
+  }
+  .step2-box{
+    .mothod{ padding: 50px 229px; border-top: 1px solid #e6e6e6; position: relative;
+      h3{ display: inline-block; font-size: 14px; color: #e5340f; position: absolute; left: 20px; top: 20px;}
+      .list{ height: 40px; .cf(); margin-bottom: 20px;
+        span{ float: left; display: inline-block; width: 100px; height: 40px; line-height: 40px; margin-right: 20px; text-align: right; font-size: 14px; .omit(); }
+        input{ float: left; height: 14px; line-height: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; color: #999;}
+        input.account{ width: 260px;}
+        input.yanzhengma{ width: 80px;}
+        input:focus{ border-color: #00b971; color: #333;}
+        img{ float: left; display: inline-block; width: 90px; height: 36px; margin: 0 5px; }
+        i{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #737373; }
+        a{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #5caae6; font-weight: bolder; }
+        a.seconds{ float: left; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #ccc; border-radius: 5px; color: #fff; background-color: #00b971;}
+        a.actived{ background-color: #efefef; color: #737373;}
+      }
+      .next-step{ position: relative; margin-top: 20px;
+        a{ display: inline-block; width: 270px; height: 30px; line-height: 30px; border: 1px solid #00a665; background-color: #00b971; text-align: center; color: #fff; border-radius: 5px; margin-left: 120px;}
+      }
+    }
+  }
+  .step3-box{ padding: 50px 229px;
+    .list{ height: 40px; .cf();
+      span{ float: left; display: inline-block; width: 100px; height: 40px; line-height: 40px; margin-right: 20px; text-align: right; font-size: 14px; .omit(); }
+      input{ float: left; height: 14px; line-height: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; color: #999;}
+      input.account{ width: 260px;}
+      input.yanzhengma{ width: 260px;}
+      input:focus{ border-color: #00b971; color: #333;}
+      img{ float: left; display: inline-block; width: 90px; height: 36px; margin: 0 5px; }
+      i{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #737373; }
+      a{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #5caae6; font-weight: bolder; }
+    }
+    .safe{ margin-bottom: 20px; padding:0 98px; position: relative; .cf();
+      .degree{ float: right; height: 20px; line-height: 20px; .cf();
+        span{ float: left; margin-right: 10px;}
+        i{ float: left; display: inline-block; width: 30px; text-align: center; background-color: #b4b4b4; color: #fff; margin-left: 1px;}
+        i.active{ background-color: #fc280e;}
+      }
+    }
+    .next-step{ position: relative; margin-top: 20px;
+      a{ display: inline-block; width: 270px; height: 30px; line-height: 30px; border: 1px solid #00a665; background-color: #00b971; text-align: center; color: #fff; border-radius: 5px; margin-left: 120px;}
+    }
+  }
+  .title{ height: 40px; .cf(); margin-top: -40px; margin-left: 250px;
+    span{ float: left; cursor: pointer; margin-right: 10px; width: 118px; height: 38px; line-height: 38px; border:1px solid #ccc; background-color: #f9f9f9; text-align: center;}
+    span.active{ background-color: #fff; border-bottom: none; margin-top: 1px;}
+  }
+  .register-box{ padding: 50px 129px; display: none;
+    .list{ height: 40px; .cf(); margin-top: 20px; position: relative;
+      span{ float: left; display: inline-block; width: 100px; height: 40px; line-height: 40px; margin-right: 20px; text-align: right; font-size: 14px; .omit(); }
+      input{ float: left; height: 14px; line-height: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; color: #999;}
+      input.account{ width: 260px;}
+      input.yanzhengma{ width: 80px;}
+      input:focus{ border-color: #00b971; color: #333;}
+      img{ float: left; display: inline-block; width: 90px; height: 36px; margin: 0 5px; }
+      i{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #737373; }
+      a{ float: left; display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; color: #5caae6; font-weight: bolder; }
+      a.seconds{ float: left; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #ccc; border-radius: 5px; color: #fff; background-color: #00b971;}
+      a.actived{ background-color: #efefef; color: #737373;}
+      #reg{ margin-left: 118px;}
+      #reg1{ margin-left: 118px;}
+      #reg2{ margin-left: 118px;}
+      label{ margin-left: 5px;
+        b{ color: #e5340f;}
+      }
+      .error{ display: none; .cf(); float: left; height: 40px; line-height: 40px; color: #e5340f; max-width: 280px; .omit();
+        i{ float: left; width: 24px; height: 18px; .bg("../images/msg.png",no-repeat,0 -23px); margin: 8px 0 0 6px;}
+      }
+      .tips{ display: none; float: left; padding: 0 5px; height: 34px; line-height: 36px; border: 1px solid #ccc; margin-left: 20px; position: relative;
+        i{ display: inline-block; position: absolute; left: -13px; top: 12px; width: 8px; height: 11px; .bg("../images/msg.png",no-repeat,0 -51px);}
+      }
+    }
+    .safe{ margin-bottom: 20px; padding-right:300px; position: relative; .cf();
+      .degree{ float: right; height: 20px; line-height: 20px; .cf();
+        span{ float: left; margin-right: 10px;}
+        i{ float: left; display: inline-block; width: 30px; text-align: center; background-color: #b4b4b4; color: #fff; margin-left: 1px;}
+        i.active{ background-color: #fc280e;}
+      }
+    }
+    .next-step{ position: relative; margin-top: 20px;
+      a{ display: inline-block; width: 270px; height: 30px; line-height: 30px; border: 1px solid #00a665; background-color: #00b971; text-align: center; color: #fff; border-radius: 5px; margin-left: 120px;}
+    }
+
+  }
+}
+.footer-box{ width: 960px; margin: 40px auto 0;
+  .footer{ color: #737373;
+    .footer-top{ text-align: center;
+      a{ position: relative; display: inline-block; height: 26px; line-height: 26px; padding: 0 10px;}
+    }
+    .footer-copy{ text-align: center; margin-top: 10px;}
+  }
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/order.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/calendar.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+</head>
+<body>
+<!--网页头部-->
+<div class="header">
+    @@include("../common/header3.html")
+</div>
+<div class="wapper">
+    <!--支付步骤-->
+    <div class="order-step">
+        <ul>
+            <li class="chooseed">1.支付商品<span class="active"></span></li>
+            <li class="chooseed">2.填写订单<span class="link"></span></li>
+            <li>3.支付<span class="delta"></span></li>
+            <li>4.预订成功</li>
+        </ul>
+    </div>
+    <!--订单详细信息-->
+    <div class="order-box">
+        <div class="order-info">
+            <h3>预订信息填写</h3>
+            <div class="choose-data">
+                <span>游玩日期：</span>
+                <input type="date" class="tourist-data">
+                <i class="data-icon"></i>
+            </div>
+            <div class="choose-box" id="chooseBox">
+                <div class="order-info-title">
+                    <div class="name">商品名称</div>
+                    <div class="product">包含产品</div>
+                    <div class="type">游客类型</div>
+                    <div class="people">类型人数</div>
+                    <div class="price">单价</div>
+                    <div class="total">合计</div>
+                    <div class="tourist">游客</div>
+                </div>
+                <div class="order-info-list">
+                    <div class="name"><a href="javascript:;" class="dodt">青城山门票</a></div>
+                    <div class="product"><span class="dodt">门票</span></div>
+                    <div class="type"><span class="dodt">游客类型</span></div>
+                    <div class="people">
+                        <div class="num-oper">
+                            <a href="javascript:;" class="num-pre"></a>
+                            <input type="text" class="num-input" value="0" text="0">
+                            <a href="javascript:;" class="num-next"></a>
+                        </div>
+                    </div>
+                    <div class="price"><span class="dodt">￥168</span></div>
+                    <div class="total"><span class="dodt">￥565</span></div>
+                    <div class="tourist"><a href="javascript:;">绑定游客</a></div>
+                </div>
+                <div class="order-info-list">
+                    <div class="name"><a href="javascript:;" class="dodt">青城山门票</a></div>
+                    <div class="product"><span class="dodt">门票</span></div>
+                    <div class="type"><span class="dodt">游客类型</span></div>
+                    <div class="people">
+                        <div class="num-oper">
+                            <a href="javascript:;" class="num-pre"></a>
+                            <input type="text" class="num-input" value="0" text="0">
+                            <a href="javascript:;" class="num-next"></a>
+                        </div>
+                    </div>
+                    <div class="price"><span class="dodt">￥168</span></div>
+                    <div class="total"><span class="dodt">￥565</span></div>
+                    <div class="tourist"><a href="javascript:;">绑定游客</a></div>
+                </div>
+                <div class="order-info-list">
+                    <div class="name"><a href="javascript:;" class="dodt">青城山门票</a></div>
+                    <div class="product"><span class="dodt">门票</span></div>
+                    <div class="type"><span class="dodt">游客类型</span></div>
+                    <div class="people">
+                        <div class="num-oper">
+                            <a href="javascript:;" class="num-pre"></a>
+                            <input type="text" class="num-input" value="0" text="0">
+                            <a href="javascript:;" class="num-next"></a>
+                        </div>
+                    </div>
+                    <div class="price"><span class="dodt">￥168</span></div>
+                    <div class="total"><span class="dodt">￥565</span></div>
+                    <div class="tourist"><a href="javascript:;">绑定游客</a></div>
+                </div>
+                <div class="order-info-list">
+                    <div class="name"><a href="javascript:;" class="dodt">青城山门票</a></div>
+                    <div class="product"><span class="dodt">门票</span></div>
+                    <div class="type"><span class="dodt">游客类型</span></div>
+                    <div class="people">
+                        <div class="num-oper">
+                            <a href="javascript:;" class="num-pre"></a>
+                            <input type="text" class="num-input" value="0" text="0">
+                            <a href="javascript:;" class="num-next"></a>
+                        </div>
+                    </div>
+                    <div class="price"><span class="dodt">￥168</span></div>
+                    <div class="total"><span class="dodt">￥565</span></div>
+                    <div class="tourist"><a href="javascript:;">绑定游客</a></div>
+                </div>
+                <div class="order-info-list">
+                    <div class="name"><a href="javascript:;" class="dodt">青城山门票</a></div>
+                    <div class="product"><span class="dodt">门票</span></div>
+                    <div class="type"><span class="dodt">游客类型</span></div>
+                    <div class="people">
+                        <div class="num-oper">
+                            <a href="javascript:;" class="num-pre"></a>
+                            <input type="text" class="num-input" value="0" text="0">
+                            <a href="javascript:;" class="num-next"></a>
+                        </div>
+                    </div>
+                    <div class="price"><span class="dodt">￥168</span></div>
+                    <div class="total"><span class="dodt">￥565</span></div>
+                    <div class="tourist"><a href="javascript:;">绑定游客</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="order-people">
+            <h3>取票人信息填写</h3>
+            <div class="people-details">
+                <ul>
+                    <li><span><i class="star"></i>取票人姓名：</span><input type="text" class="people-name"></li>
+                    <li><span><i class="star"></i>身份证号码：</span><input type="text" class="people-id"><span>准确填写身份证号码，可以使用身份证快速取票</span></li>
+                    <li><span><i class="star"></i>手机号码：</span><input type="text" class="people-phone"><span>此手机号码为接受短信所用，作为订购与取票凭证，请准确填写</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--订单结算-->
+    <div class="order-total">
+        <div class="order-price">
+            <span>订单总价：<b>￥376</b></span>
+            <input type="checkbox" id="priceAll">
+            <label for="priceAll">我已阅读并接受<a href="javascript:;">在线预订</a>条款</label>
+        </div>
+        <div class="order-next">
+            <a href="javascript:;" class="next-btn">同意以下条款，去支付</a>
+        </div>
+    </div>
+    <!--网页底部-->
+    <div class="footer-box">
+        @@include("../common/footer2.html")
+    </div>
+</div>
+<div class="bind-tourist" id="bindTour">
+    <div class="bind-title">
+        <h3>绑定游客</h3>
+        <a href="javascript:;" class="close-btn"></a>
+    </div>
+    <div class="bind-con">
+        <div class="con-title">
+            <h3>游客列表</h3>
+            <a href="javascript:;" class="add-tourist" id="addTour">新增游客</a>
+            <span>准确填写游客信息，可以方便游客免换票直接刷身份证游玩</span>
+        </div>
+        <div class="bind-box">
+            <div class="bind-list-title">
+                <div class="choose"><input type="checkbox" id="chooseAll"><label for="chooseAll">全选</label></div>
+                <div class="name">姓名</div>
+                <div class="number">身份证号码</div>
+                <div class="phone">手机号码</div>
+                <div class="operation">操作</div>
+            </div>
+            <div class="bind-list-box" id="bindBox">
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+                <div class="bind-list">
+                    <div class="choose"><input type="checkbox" name='check'></div>
+                    <div class="name"><span class="dodt">战三</span></div>
+                    <div class="number"><span class="dodt">511333333333333333</span></div>
+                    <div class="phone"><span class="dodt">13777777777</span></div>
+                    <div class="operation"><a href="javascript:;" class="dele">删除</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zoom" id="zoom"></div>
+<div class="add-park" id="addPark">
+    <div class="add-title">
+        <h3>新增游客</h3>
+        <a href="javascript:;" class="close-btn"></a>
+    </div>
+    <div class="add-box">
+        <ul>
+            <li><span>姓名：</span><input type="text" class="nameinput"></li>
+            <li><span>身份证号：</span><input type="text" class="idinput"></li>
+            <li><span>手机号：</span><input type="text" class="phoneinput"></li>
+        </ul>
+    </div>
+    <div class="ok-box">
+        <a href="javascript:;" class="ok-btn">确定</a>
+    </div>
+</div>
+<script type="text/javascript" src="../../js/control/common.js"></script>
+<script type="text/javascript" src="../../js/control/order.js"></script>
+</body>
+</html>

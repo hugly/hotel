@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/step.min.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+</head>
+<body>
+<!--页头部分-->
+<div class="header">
+    @@include("../common/header4.html",{"title":"找回密码"})
+</div>
+<!--网页正文部分-->
+<div class="pannle">
+    <div class="process">
+        <div class="lin"></div>
+        <div class="number">
+            <div class="step active">
+                <span>1</span>
+                <p>填写会员账号</p>
+            </div>
+            <div class="step">
+                <span>2</span>
+                <p>验证账号信息</p>
+            </div>
+            <div class="step">
+                <span>3</span>
+                <p>设置新密码</p>
+            </div>
+        </div>
+    </div>
+    <div class="step1-box">
+        <div class="list">
+            <span>会员账号</span>
+            <input type="text" class="account" value="手机号/邮箱/用户名/" text="手机号/邮箱/用户名/">
+            <div class="ok"></div>
+        </div>
+        <div class="list">
+            <span>验证码</span>
+            <input type="text" class="yanzhengma">
+            <img>
+            <i>看不清？</i>
+            <a href="javascript:;">换一张</a>
+        </div>
+        <div class="next-step">
+            <a href="javascript:;">下一步</a>
+        </div>
+    </div>
+</div>
+<!--网页底部-->
+<div class="footer-box">
+    @@include("../common/footer2.html")
+</div>
+<script type="text/javascript" src="../../js/control/common.js"></script>
+</body>
+</html>

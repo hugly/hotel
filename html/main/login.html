@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/login.min.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+</head>
+<body>
+<!--页头部分-->
+<div class="header">
+    @@include("../common/header4.html",{"title":"会员登录"})
+</div>
+<!--网页正文部分-->
+<div class="wapper">
+    <div class="pannle-left">
+        <img src="../../data-images/login.png">
+    </div>
+    <div class="pannle-right">
+        <div class="login-box">
+            <div class="tips">您输入的用户名或者密码不对，请重新输入</div>
+            <div class="ursername box"><span>用户名</span><input type="text" class="name"></div>
+            <div class="password box"><span>密码</span><input type="password" class="password"></div>
+            <div class="forget"><a href="javascript:;">忘记密码？</a></div>
+            <div class="login"><a href="javascript:;" class="login-btn">登陆</a></div>
+            <div class="register">
+                <p>您还没有会员账号？<a href="javascript:;" class="register-btn">免费注册</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--网页底部-->
+<div class="footer-box">
+    @@include("../common/footer2.html")
+</div>
+
+</body>
+</html>

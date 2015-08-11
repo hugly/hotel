@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/index.min.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+    <script type="text/javascript" src="../../js/lib/lazyload.js"></script>
+</head>
+<body>
+<!--页头部分-->
+<div class="header">
+    @@include("../common/header.html")
+</div>
+<!--正文部分-->
+<div class="wapper">
+    <!--票务和banner部分-->
+    <div class="silder">
+        <div class="tickets">
+            @@include("../common/tickets.html")
+        </div>
+        <div class="banner-box">
+            @@include("../common/banner.html")
+        </div>
+    </div>
+    <!--列表部分-->
+    <div class="pannel">
+        <!--左侧部分-->
+        <div class="pannel-left">
+            <!--热门景点部分-->
+            <div class="spots">
+                @@include("../common/hotspots.html")
+            </div>
+            <!--热卖部分-->
+            <div class="sellers">
+                @@include("../common/hotsellers.html")
+            </div>
+        </div>
+        <!--右侧部分-->
+        <div class="pannel-right">
+            <!--推荐部分-->
+            <div class="recommend">
+                @@include("../common/recommend.html")
+            </div>
+            <!--推荐套票-->
+            <div class="package">
+                @@include("../common/package.html")
+            </div>
+        </div>
+    </div>
+    <!--页脚部分-->
+    <div class="footer">
+        @@include("../common/footer.html")
+    </div>
+</div>
+<script type="text/javascript" src="../../js/control/common.js"></script>
+<script type="text/javascript" src="../../js/control/silder.js"></script>
+<script type="text/javascript" src="../../js/control/index.js"></script>
+<script type="text/javascript">
+    $("img").lazyload({
+        effect : "fadeIn",
+        failure_limit : 10,
+        load:function(){
+            $(this).removeClass("load");
+        }
+    });
+</script>
+</body>
+</html>

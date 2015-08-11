@@ -1,0 +1,248 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.wapper {
+  width: 1180px;
+  margin: 20px auto;
+  position: relative;
+}
+.wapper .products {
+  position: relative;
+  margin-bottom: 20px;
+}
+.wapper .products .product-title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid #e2e2e2;
+  position: relative;
+}
+.wapper .products .product-title h3 {
+  display: inline-block;
+  font-size: 18px;
+  color: #179251;
+  font-weight: bolder;
+  border-bottom: 2px solid #179251;
+}
+.wapper .products .product-box {
+  margin-top: 20px;
+  border: 1px solid #e2e2e2;
+}
+.wapper .products .product-box .table-title {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+}
+.wapper .products .product-box .table-title div {
+  float: left;
+  color: #777;
+  text-align: left;
+}
+.wapper .products .product-box .table-title div.choose {
+  text-align: center;
+}
+.wapper .products .product-box .table-box {
+  position: relative;
+  padding-bottom: 10px;
+}
+.wapper .products .product-box .table-box .table-list {
+  position: relative;
+  overflow: hidden;
+  line-height: 40px;
+  border-bottom: 1px dashed #ccc;
+}
+.wapper .products .product-box .table-box .table-list div {
+  float: left;
+  height: 40px;
+}
+.wapper .products .product-box .table-box .table-list div.choose {
+  text-align: center;
+}
+.wapper .products .product-box .table-box .table-list div.name a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #179251;
+  font-weight: bold;
+}
+.wapper .products .product-box .table-box .table-list div.name a span {
+  display: inline-block;
+  width: 16px;
+  height: 9px;
+  margin-left: 5px;
+  background: url("../css/images/details.png") no-repeat -105px -57px;
+}
+.wapper .products .product-box .table-box .table-list div.product span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.wapper .products .product-box .table-box .table-list div.price span {
+  color: #888;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: line-through;
+}
+.wapper .products .product-box .table-box .table-list div.lineprice span {
+  color: #f05600;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.wapper .products .product-box .table-box .table-list div.type select {
+  width: 120px;
+}
+.wapper .products .product-box .table-box .table-list div.num .num-oper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 8px;
+}
+.wapper .products .product-box .table-box .table-list div.num .num-oper .num-pre {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat 0 -185px;
+}
+.wapper .products .product-box .table-box .table-list div.num .num-oper .num-pre-active {
+  background-position: -25px -185px;
+}
+.wapper .products .product-box .table-box .table-list div.num .num-oper .num-input {
+  float: left;
+  width: 40px;
+  height: 14px;
+  line-height: 14px;
+  padding: 3px 10px;
+  color: #333;
+  margin: 0 5px;
+}
+.wapper .products .product-box .table-box .table-list div.num .num-oper .num-next {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("../css/images/details.png") no-repeat -25px -156px;
+}
+.wapper .products .product-box .table-box .table-list div.operation {
+  position: relative;
+  overflow: hidden;
+}
+.wapper .products .product-box .table-box .table-list div.operation a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.wapper .products .product-box .table-box .table-list div.list-details {
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px 20px;
+  display: none;
+}
+.wapper .products .product-box .table-box .table-list div.list-details .list-icon {
+  display: inline-block;
+  width: 17px;
+  height: 9px;
+  position: absolute;
+  left: 30px;
+  top: -9px;
+  background-image: url("../css/images/details.png");
+  background-repeat: no-repeat;
+  background-position: -104px -33px;
+}
+.wapper .products .product-box .table-box .table-list div.list-details .product-details {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+.wapper .products .product-box .table-box .table-list div.list-details .product-details span {
+  float: left;
+  width: 120px;
+  color: #999;
+}
+.wapper .products .product-box .table-box .table-list div.list-details .product-details p {
+  float: left;
+  width: 970px;
+  color: #333;
+}
+.wapper .products .product-box .table-box .table-list:hover {
+  background-color: #f1f7f2;
+}
+.wapper .products .product-box .choose {
+  width: 80px;
+}
+.wapper .products .product-box .name {
+  width: 250px;
+}
+.wapper .products .product-box .product {
+  width: 250px;
+}
+.wapper .products .product-box .lineprice {
+  width: 100px;
+}
+.wapper .products .product-box .totle {
+  width: 100px;
+}
+.wapper .products .product-box .type {
+  width: 160px;
+}
+.wapper .products .product-box .num {
+  width: 160px;
+}
+.wapper .products .product-box .operation {
+  width: 78px;
+}
+.wapper .products .order-box {
+  border: 1px solid #e2e2e2;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.wapper .products .order-box .choose-box {
+  float: left;
+  padding-left: 20px;
+}
+.wapper .products .order-box .choose-box label {
+  margin-left: 5px;
+}
+.wapper .products .order-box .choose-box a {
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+}
+.wapper .products .order-box .order-details {
+  float: right;
+  padding-right: 120px;
+}
+.wapper .products .order-box .order-details span {
+  display: inline-block;
+  height: 100%;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.wapper .products .order-box .order-details span b {
+  color: #f25500;
+  margin: 0 5px;
+}
+.wapper .products .order-box .order-details a.next-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  width: 100px;
+  height: 52px;
+  line-height: 52px;
+  background-color: #f25500;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}

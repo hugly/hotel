@@ -1,0 +1,461 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.wapper {
+  width: 1180px;
+  margin: 20px auto;
+}
+.wapper .pannle {
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-left {
+  float: left;
+  width: 210px;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+.wapper .pannle .pannle-left .left-title {
+  width: 208px;
+  border: 1px solid #c7c7c7;
+  height: 598px;
+}
+.wapper .pannle .pannle-left .left-title h3 {
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #24ba80;
+}
+.wapper .pannle .pannle-left .left-title ul .li {
+  border-bottom: 1px solid #c7c7c7;
+  padding: 20px;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .pannle-left .left-title ul .li:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-left .left-title ul .li i {
+  display: inline-block;
+  float: left;
+  width: 9px;
+  height: 9px;
+  background: transparent url("images/safe.png") no-repeat 0 -172px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.wapper .pannle .pannle-left .left-title ul .li span {
+  float: left;
+  font-size: 14px;
+  color: #737373;
+}
+.wapper .pannle .pannle-left .left-title ul .li ul.silder {
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+}
+.wapper .pannle .pannle-left .left-title ul .li ul.silder li {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 30px;
+  background: transparent url("images/safe.png") no-repeat 18px -193px;
+}
+.wapper .pannle .pannle-left .left-title ul .li ul.silder li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  color: #333;
+}
+.wapper .pannle .pannle-left .left-title ul .li ul.silder li:hover a {
+  text-decoration: underline;
+}
+.wapper .pannle .pannle-right {
+  float: left;
+  width: 968px;
+  height: 598px;
+  position: relative;
+  border: 1px solid #c7c7c7;
+  border-left: none;
+}
+.wapper .pannle .pannle-right .location {
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 20px;
+  color: #737373;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #c7c7c7;
+}
+.wapper .pannle .pannle-right .location span {
+  float: left;
+}
+.wapper .pannle .pannle-right .location a {
+  float: left;
+  margin: 0 8px;
+  color: #737373;
+}
+.wapper .pannle .pannle-right .location a:hover {
+  text-decoration: underline;
+  color: #007347;
+}
+.wapper .pannle .pannle-right .location i {
+  float: left;
+  font-family: SimSun;
+  font-weight: bolder;
+  line-height: 28px;
+}
+.wapper .pannle .pannle-right .location a.help {
+  float: right;
+  color: #00b971;
+  padding-left: 20px;
+  background: transparent url("images/safe.png") no-repeat 0 -229px;
+}
+.wapper .pannle .pannle-right .safe-box {
+  padding: 20px;
+}
+.wapper .pannle .pannle-right .safe-box div.password .class {
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.wapper .pannle .pannle-right .safe-box div.password .class span {
+  display: block;
+  text-align: center;
+}
+.wapper .pannle .pannle-right .safe-box div.password .class span i {
+  color: #f47400;
+  font-weight: bolder;
+}
+.wapper .pannle .pannle-right .safe-box div.password .class .class-grade span {
+  display: inline-block;
+  width: 30px;
+  height: 14px;
+  line-height: 15px;
+  text-align: center;
+  background-color: #b3b3b3;
+  color: #fff;
+}
+.wapper .pannle .pannle-right .safe-box div.password .class .class-grade span.active {
+  background-color: #f47400;
+  color: #fff;
+}
+.wapper .pannle .pannle-right .safe-box .safe-list {
+  height: 109px;
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .pannle-right .safe-box .safe-list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .pannle-right .safe-box .safe-list .bind {
+  float: left;
+  width: 100px;
+  height: 76px;
+  margin-right: 20px;
+  margin-top: 18px;
+  background: transparent url("images/safe.png") no-repeat 0 0;
+}
+.wapper .pannle .pannle-right .safe-box .safe-list .is {
+  background-position: 0 -76px;
+}
+.wapper .pannle .pannle-right .safe-box .safe-list .name {
+  float: left;
+  width: 100px;
+  margin-right: 50px;
+  margin-top: 40px;
+  text-align: center;
+}
+.wapper .pannle .pannle-right .safe-box .safe-list .desc {
+  float: left;
+  width: 470px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+.wapper .pannle .pannle-right .safe-box .safe-list .operate {
+  float: left;
+  width: 100px;
+  margin-top: 40px;
+}
+.wapper .pannle .pannle-right .safe-box .safe-list .operate .setting {
+  display: inline-block;
+  width: 78px;
+  height: 22px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid #e5340f;
+  background-color: #fff;
+  color: #e5340f;
+  border-radius: 5px;
+}
+.wapper .pannle .pannle-right .safe-box .safe-list .operate .setting:hover {
+  background-color: #e5340f;
+  color: #fff;
+}
+.register-box {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  margin-left: -250px;
+  margin-top: -120px;
+}
+.register-box .title {
+  height: 40px;
+  line-height: 40px;
+  background-color: #24ba80;
+  position: relative;
+  overflow: hidden;
+}
+.register-box .title h3 {
+  float: left;
+  width: 214px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.register-box .title a {
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: url("../css/images/order.png") no-repeat 0 -61px;
+}
+.register-box .register {
+  border: 2px solid #24ba80;
+  padding-bottom: 20px;
+}
+.register-box .register .list {
+  height: 40px;
+  min-height: 1px;
+  zoom: 1;
+  margin-top: 20px;
+  position: relative;
+}
+.register-box .register .list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.register-box .register .list span {
+  float: left;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.register-box .register .list input {
+  float: left;
+  height: 14px;
+  line-height: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #999;
+}
+.register-box .register .list input.account {
+  width: 260px;
+}
+.register-box .register .list input.yanzhengma {
+  width: 80px;
+}
+.register-box .register .list input:focus {
+  border-color: #00b971;
+  color: #333;
+}
+.register-box .register .list img {
+  float: left;
+  display: inline-block;
+  width: 90px;
+  height: 36px;
+  margin: 0 5px;
+}
+.register-box .register .list i {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #737373;
+}
+.register-box .register .list a {
+  float: left;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #5caae6;
+  font-weight: bolder;
+}
+.register-box .register .list a.seconds {
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #00b971;
+}
+.register-box .register .list a.actived {
+  background-color: #efefef;
+  color: #737373;
+}
+.register-box .register .list #reg {
+  margin-left: 118px;
+}
+.register-box .register .list #reg1 {
+  margin-left: 118px;
+}
+.register-box .register .list #reg2 {
+  margin-left: 118px;
+}
+.register-box .register .list label {
+  margin-left: 5px;
+}
+.register-box .register .list label b {
+  color: #e5340f;
+}
+.register-box .register .list .error {
+  display: none;
+  min-height: 1px;
+  zoom: 1;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #e5340f;
+  max-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.register-box .register .list .error:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.register-box .register .list .error i {
+  float: left;
+  width: 24px;
+  height: 18px;
+  background: transparent url("images/msg.png") no-repeat 0 -23px;
+  margin: 8px 0 0 6px;
+}
+.register-box .register .list .tips {
+  display: none;
+  float: left;
+  padding: 0 5px;
+  height: 34px;
+  line-height: 36px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  position: relative;
+}
+.register-box .register .list .tips i {
+  display: inline-block;
+  position: absolute;
+  left: -13px;
+  top: 12px;
+  width: 8px;
+  height: 11px;
+  background: transparent url("images/msg.png") no-repeat 0 -51px;
+}
+.register-box .register .safe {
+  margin-bottom: 20px;
+  padding-right: 94px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.register-box .register .safe:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.register-box .register .safe .degree {
+  float: right;
+  height: 20px;
+  line-height: 20px;
+  min-height: 1px;
+  zoom: 1;
+}
+.register-box .register .safe .degree:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.register-box .register .safe .degree span {
+  float: left;
+  margin-right: 10px;
+}
+.register-box .register .safe .degree i {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  background-color: #b4b4b4;
+  color: #fff;
+  margin-left: 1px;
+}
+.register-box .register .safe .degree i.active {
+  background-color: #fc280e;
+}
+.register-box .register .next-step {
+  position: relative;
+  margin-top: 20px;
+}
+.register-box .register .next-step button {
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  line-height: 24px;
+  border: 1px solid #00a665;
+  background-color: #00b971;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 120px;
+}

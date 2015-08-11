@@ -1,0 +1,415 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+body {
+  position: relative;
+}
+.wapper {
+  width: 1180px;
+  margin: 20px auto;
+}
+.wapper .pannle {
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .location {
+  width: 1138px;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 20px;
+  color: #737373;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+}
+.wapper .pannle .location span {
+  float: left;
+}
+.wapper .pannle .location a {
+  float: left;
+  margin: 0 8px;
+  color: #737373;
+}
+.wapper .pannle .location a:hover {
+  text-decoration: underline;
+  color: #007347;
+}
+.wapper .pannle .location a.active {
+  color: #007347;
+}
+.wapper .pannle .location i {
+  float: left;
+  font-family: SimSun;
+  font-weight: bolder;
+  line-height: 28px;
+}
+.wapper .pannle .location a.help {
+  float: right;
+  color: #00b971;
+  padding-left: 20px;
+  background: transparent url("images/safe.png") no-repeat 0 -229px;
+}
+.wapper .pannle .infro {
+  width: 1138px;
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  padding: 10px 20px;
+}
+.wapper .pannle .infro h3 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.wapper .pannle .infro ul {
+  position: relative;
+  padding: 10px 100px;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .infro ul:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .infro ul li {
+  float: left;
+  width: 465px;
+  height: 20px;
+  line-height: 20px;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .infro ul li:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .infro ul li span {
+  float: left;
+  width: 300px;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.wapper .pannle .infro ul li span:first-child {
+  width: 160px;
+  text-align: right;
+}
+.wapper .pannle .order-box {
+  width: 1178px;
+  margin-top: 20px;
+  border: 1px solid #e6e6e6;
+}
+.wapper .pannle .order-box .order-title {
+  width: 1178px;
+  height: 30px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+  border-bottom: 1px solid #e6e6e6;
+}
+.wapper .pannle .order-box .order-title:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .order-box .order-title div {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.wapper .pannle .order-box .order-list {
+  width: 1178px;
+  height: 80px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+  border-bottom: 1px solid #e6e6e6;
+}
+.wapper .pannle .order-box .order-list:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .order-box .order-list div {
+  float: left;
+  height: 80px;
+  text-align: center;
+  box-sizing: border-box;
+  border-right: 1px solid #e6e6e6;
+}
+.wapper .pannle .order-box .order-list div.type {
+  padding-top: 20px;
+}
+.wapper .pannle .order-box .order-list div.type p {
+  height: 20px;
+  line-height: 20px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.wapper .pannle .order-box .order-list div.date {
+  padding: 10px;
+  height: 80px;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.wapper .pannle .order-box .order-list div.date:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wapper .pannle .order-box .order-list div.date img {
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+.wapper .pannle .order-box .order-list div.date .intro {
+  float: left;
+  margin-left: 10px;
+  width: 200px;
+  height: 60px;
+  border-right: none;
+}
+.wapper .pannle .order-box .order-list div.date .intro p {
+  width: 100%;
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+}
+.wapper .pannle .order-box .order-list div.date .intro span {
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  text-align: left;
+}
+.wapper .pannle .order-box .order-list div.product span,
+.wapper .pannle .order-box .order-list div.price span,
+.wapper .pannle .order-box .order-list div.off span,
+.wapper .pannle .order-box .order-list div.state span {
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.wapper .pannle .order-box .order-list div.num span {
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.wapper .pannle .order-box .order-list div.num a {
+  color: #179251;
+}
+.wapper .pannle .order-box .order-list div.total b {
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  color: #e5340f;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+}
+.wapper .pannle .order-box .order-list div.state {
+  border-right: none;
+}
+.wapper .pannle .order-box .type {
+  width: 120px;
+}
+.wapper .pannle .order-box .date {
+  width: 296px;
+}
+.wapper .pannle .order-box .product {
+  width: 160px;
+}
+.wapper .pannle .order-box .price {
+  width: 120px;
+}
+.wapper .pannle .order-box .num {
+  width: 120px;
+}
+.wapper .pannle .order-box .off {
+  width: 120px;
+}
+.wapper .pannle .order-box .total {
+  width: 120px;
+}
+.wapper .pannle .order-box .state {
+  width: 120px;
+}
+.wapper .pannle .totalprice {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background-color: #f3f3f3;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.wapper .pannle .totalprice span {
+  float: right;
+}
+.wapper .pannle .totalprice b {
+  float: right;
+  margin-right: 20px;
+  font-size: 24px;
+  color: #e5340f;
+  font-weight: bolder;
+}
+.zoom {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .3;
+  filter: alpha(opacity=30);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+.list {
+  display: none;
+  width: 1138px;
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -570px;
+  margin-top: -220px;
+  z-index: 10;
+}
+.list .title {
+  height: 40px;
+  line-height: 40px;
+  background-color: #24ba80;
+  position: relative;
+  overflow: hidden;
+}
+.list .title h3 {
+  float: left;
+  width: 214px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.list .title a {
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: url("../css/images/order.png") no-repeat 0 -61px;
+}
+.list .listcon {
+  margin: 10px 0;
+  max-height: 340px;
+}
+.list .listcon .listtitle {
+  width: 1138px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f3f3f3;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.list .listcon .listtitle:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.list .listcon .listtitle div {
+  float: left;
+  text-align: center;
+}
+.list .listcon .member {
+  width: 1138px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px dashed #e6e6e6;
+  position: relative;
+  min-height: 1px;
+  zoom: 1;
+}
+.list .listcon .member:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.list .listcon .member div {
+  float: left;
+  text-align: center;
+  height: 30px;
+}
+.list .listcon .member div span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.list .listcon .name {
+  width: 300px;
+}
+.list .listcon .card {
+  width: 536px;
+}
+.list .listcon .phone {
+  width: 300px;
+}
+.list .page-box {
+  margin-bottom: 10px;
+}

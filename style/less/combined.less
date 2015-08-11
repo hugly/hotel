@@ -1,0 +1,98 @@
+@import "lib.less";
+
+.wapper{ width: 1200px; margin: 0 auto;
+  .location{ height: 30px; line-height: 30px; margin: 10px 0; color: #a0a0a0; position: relative; overflow: hidden;
+    span{ float: left;}
+    a{ float: left; margin: 0 8px; color: #a0a0a0;}
+    a:hover{ text-decoration: underline; color: #303030;}
+    i{ float: left; font-family: SimSun; font-weight: bolder; line-height: 28px;}
+  }
+  .combined-box{ width: 100%; position: relative; margin-bottom: 20px;
+    .combined-title{ width: 1198px; height: 34px; line-height: 34px; border: 1px solid #d2d7de; border-bottom: none; background-color: #eee; z-index: 0;
+      ul{ position: relative; overflow: hidden; z-index: 1;
+        li{ float: left; padding: 0 25px; color: #777777; font-size: 14px; border-right: 1px solid #d2d7de; z-index: 2; cursor: pointer;}
+        li.active{ background-color: #fff; color: #179251; border-top: 2px solid #179251;}
+      }
+    }
+    .combined-con{ width: 1198px; height: auto; border: 1px solid #d2d7de; background-color: #fff; position: relative;
+      .num-oper{ position: relative; overflow: hidden; width: 100%; height: 100%; padding-top: 8px;
+        .num-pre{ float: left; width: 24px; height: 24px; background: url("../css/images/details.png") no-repeat 0 -185px;}
+        .num-pre-active {background-position:-25px -185px}
+        .num-input{ float: left; width: 40px; height: 14px; line-height: 14px; padding: 3px 10px; color: #333; margin: 0 5px;}
+        .num-next{ float: left; width: 24px; height: 24px; background: url("../css/images/details.png") no-repeat -25px -156px;}
+      }
+      .travel-date{ padding: 10px 10px 10px 20px; position: relative; border-bottom: 1px solid #d2d7de;
+        span{ display: inline-block; margin-right: 20px;}
+      }
+      .travel-num{ padding: 10px 10px 10px 20px; position: relative; .cf();
+        span{ float: left; display: inline-block; margin-right: 20px; line-height: 40px;}
+        .num-box{ float: left; width: 160px; display: inline-block;}
+      }
+      .order-table{ width: 100%; position: relative; border-top: 1px solid #ccc;
+        .table-title{ height: 30px; line-height: 30px; border-bottom: 1px solid #ccc; background-color: #f8f8f8; position: relative; overflow: hidden; padding-left: 20px;
+          div{ float: left; color: #777; text-align: left;}
+          div.price{ text-align: center;}
+          div.operation{ text-align: center;}
+        }
+        .table-box{ position: relative; padding-bottom: 10px; z-index: 99;
+          .table-list{ position: relative; .cf(); padding-left: 20px; line-height: 40px; border-bottom: 1px dashed #ccc;
+            div{ float: left;  height: 40px;}
+            div.name a{ display: block; width: 100%; height: 100%; color: #179251; font-weight: bold; box-sizing: border-box; padding-right: 20px;
+              span{ display: inline-block; width: 16px; height: 9px; margin-left: 5px; background: url("../css/images/details.png") no-repeat -105px -57px;}
+              span.down{ background-position: -105px -47px;}
+            }
+            div.date input{ width: 100px;}
+            div.product span,div.ticket span{ display: block; width: 100%; height: 100%; .omit();}
+            div.price span{  color: #f05600; display: block; width: 100%; height: 100%; font-weight: bolder; .omit();}
+            div.lineprice input{ width: 80px; }
+            div.type select{ width: 120px;}
+            div.num .num-oper{ position: relative; overflow: hidden; width: 100%; height: 100%; padding-top: 8px;
+              .num-pre{ float: left; width: 24px; height: 24px; background: url("../css/images/details.png") no-repeat 0 -185px;}
+              .num-pre-active {background-position:-25px -185px}
+              .num-input{ float: left; width: 40px; height: 14px; line-height: 14px; padding: 3px 10px; color: #333; margin: 0 5px;}
+              .num-next{ float: left; width: 24px; height: 24px; background: url("../css/images/details.png") no-repeat -25px -156px;}
+              .num-next-active{}
+            }
+            div.operation{ position: relative; overflow: hidden; text-align: center;
+              a{ color: #f05600; font-weight: bolder;}
+            }
+            div.list-details{ width: 440px; height: auto; border: 1px solid #ccc; margin-bottom: 20px; position: absolute; top:40px; left: 100px; padding: 10px 20px; display: none; z-index: 100; background-color: #fff;
+              .list-icon{ display: inline-block; width: 17px; height: 9px; position: absolute; left: 30px; top: -9px; background-image: url("../css/images/details.png"); background-repeat: no-repeat; background-position: -104px -33px;}
+              .product-details{ width: 100%; position: relative; overflow: hidden; height: auto;
+                span{ float: left; width: 120px; color: #999;}
+                p{ float: left; width: 390px; color: #333; line-height: 30px;}
+              }
+            }
+            div.list-box{ width: 556px; height: auto; float: right; display: none;
+              .list-list{ border-top: 1px dashed #e6e6e6;}
+            }
+          }
+          .table-list:hover{ background-color: #f1f7f2;
+            .list-details{ background-color: #fff;}
+          }
+        }
+        .choose{ width: 80px;}
+        .name{ width: 300px;}
+        .price{ width: 100px; text-align: center;}
+        .ticket{ width: 120px;}
+        .date{ width: 120px;}
+        .type{ width: 160px;}
+        .num{ width: 150px;}
+        .operation{ width: 146px; text-align: center;}
+      }
+    }
+  }
+  .order-box{ border: 1px solid #e2e2e2; height: 50px; line-height: 50px; margin: 20px 0; position: relative; overflow: hidden;
+    .choose-box{ float: left; padding-left: 20px;
+      label{ margin-left: 5px; }
+      a{ display: inline-block; width: 50px; height: 100%; text-align: center;}
+    }
+    .order-details{ float: right; padding-right: 120px;
+      span{ display: inline-block; height: 100%; margin-left: 20px; font-size: 18px;
+        b{ color: #f25500; margin: 0 5px; }
+      }
+      a.next-btn{ position: absolute; right: 0; top: 0; display: inline-block; width: 100px; height: 52px; line-height: 52px; background-color: #f25500; color: #fff; font-size: 18px; text-align: center;}
+    }
+  }
+
+}

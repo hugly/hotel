@@ -1,0 +1,119 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+.header-box {
+  width: 980px;
+}
+.wapper {
+  width: 980px;
+  margin: 60px auto;
+  position: relative;
+  overflow: hidden;
+}
+.wapper .pannle-left {
+  float: left;
+  width: 500px;
+  margin-right: 30px;
+}
+.wapper .pannle-right {
+  float: left;
+  width: 450px;
+}
+.wapper .pannle-right .login-box {
+  width: 408px;
+  height: 238px;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+.wapper .pannle-right .login-box .tips {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #e5340f;
+}
+.wapper .pannle-right .login-box .box {
+  height: 40px;
+  position: relative;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.wapper .pannle-right .login-box .box span {
+  float: left;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.wapper .pannle-right .login-box .box input {
+  float: left;
+  font-size: 14px;
+  width: 270px;
+  height: 14px;
+  line-height: 14px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.wapper .pannle-right .login-box .box input:focus {
+  border-color: #24ba80;
+}
+.wapper .pannle-right .login-box .forget {
+  padding-left: 80px;
+}
+.wapper .pannle-right .login-box .forget a {
+  color: #e5340f;
+  display: block;
+}
+.wapper .pannle-right .login-box .login {
+  height: 35px;
+  position: relative;
+  padding-left: 80px;
+  margin: 10px 0;
+}
+.wapper .pannle-right .login-box .login a {
+  display: inline-block;
+  font-size: 16px;
+  width: 300px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  background-color: #00b971;
+  border: 1px solid #00a665;
+  border-radius: 5px;
+}
+.wapper .pannle-right .login-box .register {
+  padding-right: 25px;
+}
+.wapper .pannle-right .login-box .register p {
+  text-align: right;
+}
+.wapper .pannle-right .login-box .register p a {
+  color: #e5340f;
+}
+.footer-box {
+  width: 960px;
+  margin: 40px auto 0;
+}
+.footer-box .footer {
+  color: #737373;
+}
+.footer-box .footer .footer-top {
+  text-align: center;
+}
+.footer-box .footer .footer-top a {
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+}
+.footer-box .footer .footer-copy {
+  text-align: center;
+  margin-top: 10px;
+}

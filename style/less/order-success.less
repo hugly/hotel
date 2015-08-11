@@ -1,0 +1,83 @@
+body{ background-color: #f6f6f6; z-index: 0; position: relative;
+  .header{ width: 100%; height: 80px; background-color: #fff;
+    .header-box{ position: relative; overflow: hidden; width: 960px;
+      .logo{ float: left; padding-left: 15px; width: 250px; padding-top: 17px;}
+      .order-nav{ float: right; margin-right: 40px; margin-top: 27px;
+        ul{ position: relative; overflow: hidden;
+          li{ float: left; position: relative;
+            a{ display: inline-block;  height: 26px; line-height: 26px; padding: 0 10px;}
+            i{ display: inline-block; width: 0px; height: 12px; border-right: 1px solid #c6c6c6; position: absolute; right: 0; top: 6px; }
+          }
+        }
+      }
+    }
+  }
+  .wapper{ width: 960px; margin: 60px auto 20px; background-color: #fff;
+    .order-pannel{ width: 898px; border: 1px solid #e6e6e6; box-shadow: 2px 2px 2px #ccc; padding: 30px;
+      .success-box{ height: 80px; line-height: 80px; padding-bottom: 40px; border-bottom: 1px dashed #e5e5e5; text-align: center; position: relative; overflow: hidden;
+        span{ float: left; display: inline-block; width: 250px; height: 80px; margin-left: 220px; padding-left: 90px; background: url("../css/images/success.png") no-repeat 8px 5px; font-size: 24px; color: #303030;}
+        a{ float: left; display: inline-block; width: 82px; height: 32px; background: url("../css/images/success.png") no-repeat 0 -78px; margin-top: 22px;}
+      }
+      .order-details{ padding: 30px 80px;
+        ul{ position: relative; overflow: hidden;
+          li{ float: left; width: 369px; height: 40px; line-height: 40px; border-bottom: 1px dashed #e5e5e5;
+            span{ display: inline-block; color: #303030; padding-left: 20px;}
+            span.head{ color: #777; width: 80px; text-align: right; padding-left: 0;}
+          }
+          li.special{ width: 100%; border-bottom: none;
+            a.map{ display: inline-block; height: 30px; margin: 0 5px; padding-left: 15px; color: #007347; background: url("../css/images/success.png") no-repeat 0 -112px; }
+            i{ color: #ababab;}
+          }
+        }
+      }
+      .product{
+        .name{ width: 160px;}
+        .haspro{ width: 180px;}
+        .type{ width: 100px;}
+        .num{ width: 100px;}
+        .tourist{ width: 330px;}
+        .product-title{ height: 30px; line-height: 30px; background-color: #f6f6f6; padding: 0 10px;
+          div{ float: left;  text-align: left;}
+        }
+        .product-list{ height: 48px; line-height: 48px; border-bottom: 1px dashed #e5e5e5; padding: 0 10px;
+          div{ float: left;
+            a{ color: #007347;}
+            a,span{ display: inline-block; width: 100%; height: 100%; }
+          }
+          div.tourist{ position: relative; overflow: hidden;
+            a{ float: left; width: auto; color: #00b971;}
+            span{ float: left; width: auto;}
+          }
+        }
+      }
+    }
+  }
+  .footer-box{ width: 960px; margin: 40px auto 0;
+    .footer{ color: #737373;
+      .footer-top{ text-align: center;
+        a{ position: relative; display: inline-block; height: 26px; line-height: 26px; padding: 0 10px;}
+      }
+      .footer-copy{ text-align: center; margin-top: 10px;}
+    }
+  }
+  .zoom{ display: none; width: 100%; height: 100%; background-color: #000; opacity: .3; filter:alpha(opacity=30); position: absolute; left: 0; top: 0; z-index: 2;}
+  .touris-box{ width: 680px; position: absolute; left: 50%; top: 50%; margin-left: -340px; background-color: #fff; z-index: 3; display: none;
+    .tourist-title{  height: 40px; line-height: 40px; background-color: #24ba80; position: relative; overflow: hidden;
+      h3{ float: left; width: 640px; height: 40px; color: #fff; text-align: center; font-size: 16px;}
+      a{float: right; width: 40px; height: 40px; background: url("../css/images/success.png") no-repeat 0 -147px;}
+    }
+    .tourist-box{ border: 2px solid #24ba80; padding: 20px;
+      .name{ width: 180px;}
+      .id{ width: 230px;}
+      .phone{ width: 180px;}
+      .tourist-head{ height: 30px; line-height: 30px; background-color: #f6f6f6; padding: 0 20px; position: relative; overflow: hidden;
+        div{ float: left; }
+      }
+      .tourist-line{ height: 40px; line-height: 40px; border-bottom: 1px dashed #e5e5e5; padding: 0 20px; position: relative; overflow: hidden;
+        div{ float: left;
+          span{ display: block; width: 100%; height: 100%;}
+        }
+      }
+    }
+  }
+}

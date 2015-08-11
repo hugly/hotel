@@ -1,0 +1,292 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+body {
+  background-color: #f6f6f6;
+  z-index: 0;
+  position: relative;
+}
+body .header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+body .header .header-box {
+  position: relative;
+  overflow: hidden;
+  width: 960px;
+}
+body .header .header-box .logo {
+  float: left;
+  padding-left: 15px;
+  width: 250px;
+  padding-top: 17px;
+}
+body .header .header-box .order-nav {
+  float: right;
+  margin-right: 40px;
+  margin-top: 27px;
+}
+body .header .header-box .order-nav ul {
+  position: relative;
+  overflow: hidden;
+}
+body .header .header-box .order-nav ul li {
+  float: left;
+  position: relative;
+}
+body .header .header-box .order-nav ul li a {
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+}
+body .header .header-box .order-nav ul li i {
+  display: inline-block;
+  width: 0px;
+  height: 12px;
+  border-right: 1px solid #c6c6c6;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+body .wapper {
+  width: 960px;
+  margin: 60px auto 20px;
+  background-color: #fff;
+}
+body .wapper .order-pannel {
+  width: 898px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 2px 2px 2px #ccc;
+  padding: 30px;
+}
+body .wapper .order-pannel .success-box {
+  height: 80px;
+  line-height: 80px;
+  padding-bottom: 40px;
+  border-bottom: 1px dashed #e5e5e5;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .order-pannel .success-box span {
+  float: left;
+  display: inline-block;
+  width: 250px;
+  height: 80px;
+  margin-left: 220px;
+  padding-left: 90px;
+  background: url("../css/images/success.png") no-repeat 8px 5px;
+  font-size: 24px;
+  color: #303030;
+}
+body .wapper .order-pannel .success-box a {
+  float: left;
+  display: inline-block;
+  width: 82px;
+  height: 32px;
+  background: url("../css/images/success.png") no-repeat 0 -78px;
+  margin-top: 22px;
+}
+body .wapper .order-pannel .order-details {
+  padding: 30px 80px;
+}
+body .wapper .order-pannel .order-details ul {
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .order-pannel .order-details ul li {
+  float: left;
+  width: 369px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+body .wapper .order-pannel .order-details ul li span {
+  display: inline-block;
+  color: #303030;
+  padding-left: 20px;
+}
+body .wapper .order-pannel .order-details ul li span.head {
+  color: #777;
+  width: 80px;
+  text-align: right;
+  padding-left: 0;
+}
+body .wapper .order-pannel .order-details ul li.special {
+  width: 100%;
+  border-bottom: none;
+}
+body .wapper .order-pannel .order-details ul li.special a.map {
+  display: inline-block;
+  height: 30px;
+  margin: 0 5px;
+  padding-left: 15px;
+  color: #007347;
+  background: url("../css/images/success.png") no-repeat 0 -112px;
+}
+body .wapper .order-pannel .order-details ul li.special i {
+  color: #ababab;
+}
+body .wapper .order-pannel .product .name {
+  width: 160px;
+}
+body .wapper .order-pannel .product .haspro {
+  width: 180px;
+}
+body .wapper .order-pannel .product .type {
+  width: 100px;
+}
+body .wapper .order-pannel .product .num {
+  width: 100px;
+}
+body .wapper .order-pannel .product .tourist {
+  width: 330px;
+}
+body .wapper .order-pannel .product .product-title {
+  height: 30px;
+  line-height: 30px;
+  background-color: #f6f6f6;
+  padding: 0 10px;
+}
+body .wapper .order-pannel .product .product-title div {
+  float: left;
+  text-align: left;
+}
+body .wapper .order-pannel .product .product-list {
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px dashed #e5e5e5;
+  padding: 0 10px;
+}
+body .wapper .order-pannel .product .product-list div {
+  float: left;
+}
+body .wapper .order-pannel .product .product-list div a {
+  color: #007347;
+}
+body .wapper .order-pannel .product .product-list div a,
+body .wapper .order-pannel .product .product-list div span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+body .wapper .order-pannel .product .product-list div.tourist {
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .order-pannel .product .product-list div.tourist a {
+  float: left;
+  width: auto;
+  color: #00b971;
+}
+body .wapper .order-pannel .product .product-list div.tourist span {
+  float: left;
+  width: auto;
+}
+body .footer-box {
+  width: 960px;
+  margin: 40px auto 0;
+}
+body .footer-box .footer {
+  color: #737373;
+}
+body .footer-box .footer .footer-top {
+  text-align: center;
+}
+body .footer-box .footer .footer-top a {
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+}
+body .footer-box .footer .footer-copy {
+  text-align: center;
+  margin-top: 10px;
+}
+body .zoom {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .3;
+  filter: alpha(opacity=30);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+body .touris-box {
+  width: 680px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -340px;
+  background-color: #fff;
+  z-index: 3;
+  display: none;
+}
+body .touris-box .tourist-title {
+  height: 40px;
+  line-height: 40px;
+  background-color: #24ba80;
+  position: relative;
+  overflow: hidden;
+}
+body .touris-box .tourist-title h3 {
+  float: left;
+  width: 640px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+body .touris-box .tourist-title a {
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: url("../css/images/success.png") no-repeat 0 -147px;
+}
+body .touris-box .tourist-box {
+  border: 2px solid #24ba80;
+  padding: 20px;
+}
+body .touris-box .tourist-box .name {
+  width: 180px;
+}
+body .touris-box .tourist-box .id {
+  width: 230px;
+}
+body .touris-box .tourist-box .phone {
+  width: 180px;
+}
+body .touris-box .tourist-box .tourist-head {
+  height: 30px;
+  line-height: 30px;
+  background-color: #f6f6f6;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+body .touris-box .tourist-box .tourist-head div {
+  float: left;
+}
+body .touris-box .tourist-box .tourist-line {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px dashed #e5e5e5;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+body .touris-box .tourist-box .tourist-line div {
+  float: left;
+}
+body .touris-box .tourist-box .tourist-line div span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

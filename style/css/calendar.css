@@ -1,0 +1,161 @@
+.calendar_plugin{
+    width: 596px;
+    height: 256px;
+    border: 2px solid #e6e6e6;
+    position: relative;
+    background: #e6e6e6;
+}
+.operations{
+    float: right;
+    width: 532px;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    color: #303030;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+.remotes{
+    float: left;
+    width: 64px;
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    position: relative;
+}
+.preMouth{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 36px;
+    height: 16px;
+    padding: 0 14px;
+    background: url("../css/images/calen.png") no-repeat 14px 0;
+    cursor: pointer;
+}
+.hasPre{
+    color: #303030;
+}
+.theday{
+    display: inline-block;
+    padding: 0 5px;
+    height: 256px;
+    margin-top: 110px;
+    word-break: break-all;
+    font-size: 14px;
+}
+.nextMouth{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 36px;
+    height: 16px;
+    padding: 0 14px;
+    background: url("../css/images/calen.png") no-repeat 14px -17px;
+    cursor: pointer;
+}
+.hasNext{
+    color: #a9bdc7;
+}
+.weeks{
+    float: right;
+    width: 532px;
+    height: 29px;
+    line-height: 29px;
+    position: relative;
+    color: #303030;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+.weekDays{
+    float: left;
+    width: 75px;
+    margin-left: 1px;
+    height: 100%;
+    background: #fff;
+}
+.saturday{
+    color: #f47300;
+    border-right: none;
+}
+.sunday{
+    color: #f47300;
+}
+.fullword{
+    text-align: center;
+}
+.cells{
+    float: right;
+    width: 532px;
+    position: relative;
+}
+.calendar_con{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.calendar_con div{
+    width: 75px;
+    height: 37px;
+    float: left;
+    position: relative;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    background: #fff;
+    cursor: pointer;
+}
+.calendar_con div.icon{
+    background: #dbf5ff;
+}
+.calendar_con div.nowDay:hover{
+    background: #dbf5ff;
+}
+.calendar_con div.pastDay,.calendar_con div.futureDay{
+    background: #effaff;
+}
+.calendar_con div span{
+    display: inline-block;
+    font-size: 12px;
+    color: #3f6f85;
+}
+.calendar_con div span.past{
+    color: #91b1c0;
+}
+.nowDay .ticket{
+    color: #e74430;
+}
+.nowDay span.price{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    color: #f47300;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.nowDay span.today{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    color: #e74430;
+    font-size: 12px;
+}
+.nowDay span.ticket{
+    position: absolute;
+    right: 4px;
+    top: 8px;
+}
+.nowDay span.asap{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+
+
+
+
+
+

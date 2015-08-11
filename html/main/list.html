@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都江堰旅游</title>
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/list.min.css">
+    <script type="text/javascript" src="../../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/jq.extend.js"></script>
+</head>
+<body>
+<!--页头部分-->
+<div class="header">
+    @@include("../common/header.html")
+</div>
+<!--正文部分-->
+<div class="wapper">
+    <!--当前位置-->
+    <div class="location">
+        <span>当前位置：</span><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a><i>&gt;</i><a href="javascript:;">首页</a>
+    </div>
+    <!--筛选部分-->
+    <div class="screen-box">
+        <div class="screen-title" id="screenTitle">
+            <ul>
+                <li class="active">票务（88）</li>
+                <li>酒店（88）</li>
+                <li>度假（88）</li>
+                <li>餐饮（88）</li>
+                <li>特产（88）</li>
+            </ul>
+        </div>
+        <div class="screen-con" id="screenCon">
+            <div class="screen-list active">
+                <ul>
+                    <li class="spot">
+                        <span>景&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
+                        <div class="option">
+                            <a href="javascript:;" class="item active">不限</a><a class="item" type="spot" href="javascript:;" dataid="111">青城山</a><a class="item" type="spot"  href="javascript:;" dataid="222">都江堰</a>
+                            <a class="item" type="spot"  href="javascript:;" dataid="555">都江堰</a><a class="item" type="spot" href="javascript:;" dataid="444">都江堰</a><a class="item" type="spot"  href="javascript:;" dataid="333">都江堰</a>
+                        </div>
+                    </li>
+                    <li class="sprt">
+                        <span>景&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点：</span>
+                        <div class="option">
+                            <a href="javascript:;" class="item active">不限</a><a type="sprt" class="item" href="javascript:;" dataid="666">青城山（<b>99</b>）</a><a type="sprt" class="item" href="javascript:;" dataid="777">都江堰（<b>99</b>）</a>
+                            <a type="sprt" class="item" href="javascript:;" dataid="888">都江堰（<b>99</b>）</a><a type="sprt" class="item" href="javascript:;" dataid="999">都江堰（<b>99</b>）</a><a type="sprt" class="item" href="javascript:;" dataid="aaa">都江堰（<b>99</b>）</a>
+                        </div>
+                    </li>
+                    <li id="total">
+                        <span>您已选择：</span>
+                        <div class="option" id="optionBox">
+                            <a href="javascript:;" class="clear">清除所有筛选</a>
+                            <span class="total">共<b>198</b>个商品</span>
+                        </div>
+                    </li>
+                    <input type="hidden" id="spotHidden">
+                    <input type="hidden" id="sprtHidden">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--网页正文部分-->
+    <div class="pannel">
+        <!--左侧部分-->
+        <div class="pannel-left">
+            <!--推荐排序-->
+            <div class="sort-box" id="sort">
+                <span>推荐排序：</span>
+                <a href="javascript:;">热门</a>
+                <a class="active" href="javascript:;">销量<i></i></a>
+                <a href="javascript:;">折扣<i></i></a>
+                <a href="javascript:;">价格<i></i></a>
+                <a href="javascript:;">最新<i></i></a>
+            </div>
+            <!--列表-->
+            <div class="list-box">
+                <ul>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                    <li><a href="javascript:;">
+                        <img src="../../data-images/ad1.jpg">
+                        <p class="price-bar"><b class="dodt">￥666</b><i class="dodt">38人购买</i></p>
+                        <p class="dodt">都江堰峰景区门票</p>
+                    </a></li>
+                </ul>
+            </div>
+            <!--页码-->
+            <div class="page-box">
+                <div class="page">
+                    <a href="javascript:;">1</a>
+                    <a href="javascript:;">1</a>
+                    <a href="javascript:;">1</a>
+                    <a href="javascript:;">1</a>
+                    <a href="javascript:;">1</a>
+                    <a href="javascript:;">1</a>
+                    <a href="javascript:;">下一页</a>
+                    <a href="javascript:;">末页</a>
+                </div>
+            </div>
+        </div>
+        <!--右侧部分-->
+        <div class="pannel-right">
+            <!--热门景点部分-->
+            <div class="spots">
+                @@include("../common/hotspots.html")
+            </div>
+            <!--热卖部分-->
+            <div class="sellers">
+                @@include("../common/hotsellers.html")
+            </div>
+        </div>
+    </div>
+    <!--页脚部分-->
+    <div class="footer">
+        @@include("../common/footer.html")
+    </div>
+</div>
+<div class="cart-box">
+    <a href="javascript:;" class="cart has"><span>3</span></a>
+    <a href="javascript:;" class="top" id="gotop"></a>
+</div>
+<script type="text/javascript" src="../../js/control/list.js"></script>
+<script type="text/javascript" src="../../js/control/gotop.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import "lib.less";
+body{ position: relative;}
+.wapper{ width: 1180px; margin: 20px auto;
+  .pannle{ position: relative; .cf();
+    .location{ width: 1138px; height: 30px; line-height: 30px; padding: 5px 20px; color: #737373; position: relative; overflow: hidden; border: 1px solid #e6e6e6;
+      span{ float: left;}
+      a{ float: left; margin: 0 8px; color: #737373;}
+      a:hover{ text-decoration: underline; color: #007347;}
+      a.active{ color: #007347;}
+      i{ float: left; font-family: SimSun; font-weight: bolder; line-height: 28px;}
+      a.help{ float: right; color: #00b971; padding-left: 20px; .bg("../images/safe.png",no-repeat,0 -229px);}
+    }
+    .infro{ width: 1138px; border: 1px solid #e6e6e6; border-top: none; padding: 10px 20px;
+        h3{ height: 30px; line-height: 30px; font-size: 18px; font-weight: bolder;}
+        ul{ position: relative; padding: 10px 100px; .cf();
+          li{ float: left; width: 465px; height: 20px; line-height: 20px; .cf();
+            span{ float: left; width: 300px; height: 20px; .omit();}
+            span:first-child{ width: 160px; text-align: right;}
+          }
+        }
+    }
+    .order-box{ width: 1178px; margin-top: 20px; border: 1px solid #e6e6e6;
+      .order-title{ width: 1178px; height: 30px; position: relative; .cf(); border-bottom: 1px solid #e6e6e6;
+        div{ float: left; height: 30px; line-height: 30px; text-align: center;}
+      }
+      .order-list{ width: 1178px; height: 80px; position: relative; .cf(); border-bottom: 1px solid #e6e6e6;
+        div{ float: left; height: 80px; text-align: center; box-sizing: border-box; border-right: 1px solid #e6e6e6;}
+        div.type{ padding-top: 20px;
+          p{ height: 20px; line-height: 20px; width: 100%; .omit();}
+        }
+        div.date{ padding: 10px; height: 80px; position: relative; .cf();
+          img{ float: left; width: 60px; height: 60px;}
+          .intro{ float: left; margin-left: 10px; width: 200px; height: 60px; border-right: none;
+            p{ width: 100%; line-height: 20px; max-height: 40px; overflow: hidden;}
+            span{ display: inline-block; width: 100%; height: 20px; line-height: 20px; overflow: hidden; text-align: left;}
+          }
+        }
+        div.product,div.price,div.off,div.state{
+          span{ display: inline-block; width: 100%; height: 80px; line-height: 80px; .omit();}
+        }
+        div.num{
+          span{ display: inline-block; width: 100%; height: 20px; line-height: 20px; text-align: center; margin-top: 20px;}
+          a{ color: #179251;}
+        }
+        div.total{
+          b{ display: inline-block; width: 100%; height: 80px; line-height: 80px; color: #e5340f; .omit(); font-weight: bolder;}
+        }
+        div.state{ border-right: none;}
+      }
+      .type{ width: 120px;}
+      .date{ width: 296px;}
+      .product{ width: 160px;}
+      .price{ width: 120px;}
+      .num{ width: 120px;}
+      .off{ width: 120px;}
+      .total{ width: 120px;}
+      .state{ width: 120px;}
+    }
+    .totalprice{ width: 100%; height: 80px; line-height: 80px; background-color: #f3f3f3; position: relative; .omit();
+      span{ float: right;}
+      b{ float: right; margin-right: 20px; font-size: 24px; color: #e5340f; font-weight: bolder;}
+    }
+  }
+}
+.zoom{ display: none; width: 100%; height: 100%; background-color: #000; opacity: .3; filter:alpha(opacity=30); position: absolute; left: 0; top: 0; z-index: 9;}
+.list{ display: none; width: 1138px; border: 1px solid #e6e6e6; border-top: none; background-color: #fff; position: fixed; left: 50%; top: 50%; margin-left: -570px; margin-top: -220px; z-index: 10;
+  .title{  height: 40px; line-height: 40px; background-color: #24ba80; position: relative; overflow: hidden;
+    h3{ float: left; width: 214px; height: 40px; color: #fff; text-align: center; font-size: 16px;}
+    a{float: right; width: 40px; height: 40px; background: url("../css/images/order.png") no-repeat 0 -61px;}
+  }
+  .listcon{ margin: 10px 0; max-height: 340px;
+    .listtitle{ width: 1138px; height: 30px; line-height: 30px; background-color: #f3f3f3; position: relative; .cf();
+      div{ float: left; text-align: center;}
+    }
+    .member{ width: 1138px; height: 30px; line-height: 30px; border-bottom: 1px dashed #e6e6e6; position: relative; .cf();
+      div{ float: left; text-align: center; height: 30px;
+        span{ display: inline-block; width: 100%; height: 100%; .omit();}
+      }
+    }
+    .name{ width: 300px;}
+    .card{ width: 536px;}
+    .phone{ width: 300px;}
+  }
+  .page-box{ margin-bottom: 10px;}
+}

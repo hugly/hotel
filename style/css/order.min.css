@@ -1,0 +1,570 @@
+/*
+@ project:zhongtu,hugly
+@ date:2015-07-08
+*/
+body {
+  background-color: #f6f6f6;
+  position: relative;
+  z-index: 1;
+}
+body .header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+body .header .header-box {
+  position: relative;
+  overflow: hidden;
+}
+body .header .header-box .logo {
+  float: left;
+  padding-left: 15px;
+  width: 250px;
+  padding-top: 17px;
+}
+body .header .header-box .order-nav {
+  float: right;
+  margin-right: 40px;
+  margin-top: 27px;
+}
+body .header .header-box .order-nav ul {
+  position: relative;
+  overflow: hidden;
+}
+body .header .header-box .order-nav ul li {
+  float: left;
+  position: relative;
+}
+body .header .header-box .order-nav ul li a {
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+}
+body .header .header-box .order-nav ul li i {
+  display: inline-block;
+  width: 0px;
+  height: 12px;
+  border-right: 1px solid #c6c6c6;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+body .wapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+body .wapper .order-step {
+  height: 22px;
+  width: 100%;
+  margin: 20px 0 10px 0;
+  background-color: #eee;
+}
+body .wapper .order-step ul {
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .order-step ul li {
+  float: left;
+  width: 295px;
+  height: 100%;
+  line-height: 22px;
+  text-align: center;
+  font-weight: bolder;
+  position: relative;
+}
+body .wapper .order-step ul li span {
+  float: right;
+  display: inline-block;
+  width: 18px;
+  height: 22px;
+  background: url("../css/images/order.png") no-repeat 0 0;
+}
+body .wapper .order-step ul li span.delta {
+  background-position: -21px 0;
+}
+body .wapper .order-step ul li span.active {
+  background-position: 0 0;
+}
+body .wapper .order-step ul li span.link {
+  background-position: -42px 0;
+}
+body .wapper .order-step ul li.chooseed {
+  color: #fff;
+  background-color: #25ba80;
+}
+body .wapper .order-box {
+  background-color: #fff;
+  padding: 20px;
+  border: 3px solid #e6e6e6;
+  box-sizing: border-box;
+}
+body .wapper .order-box .order-info {
+  margin-bottom: 20px;
+}
+body .wapper .order-box .order-info h3 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #303030;
+  font-weight: bolder;
+  border-bottom: 2px solid #42cf9a;
+}
+body .wapper .order-box .order-info .choose-data {
+  margin: 20px 0 10px 0;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .order-box .order-info .choose-data span {
+  padding-left: 20px;
+}
+body .wapper .order-box .order-info .choose-data input {
+  height: 14px;
+  line-height: 14px;
+  padding: 5px 28px 5px 8px;
+  width: 160px;
+}
+body .wapper .order-box .order-info .choose-data i.data-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 260px;
+  top: 7px;
+  background: url("../css/images/order.png") no-repeat 0 -24px;
+}
+body .wapper .order-box .order-info .details-calendar {
+  display: inline-block;
+  width: 600px;
+  height: 260px;
+  margin-top: 10px;
+  position: relative;
+}
+body .wapper .order-box .order-info .order-info-title {
+  background-color: #f6f6f6;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .order-box .order-info .order-info-title div {
+  float: left;
+  text-align: left;
+}
+body .wapper .order-box .order-info .order-info-list {
+  padding: 0 20px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .order-box .order-info .order-info-list div {
+  float: left;
+  text-align: left;
+  height: 45px;
+}
+body .wapper .order-box .order-info .order-info-list div span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .wapper .order-box .order-info .order-info-list div.name a {
+  color: #179251;
+  font-weight: bolder;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .wapper .order-box .order-info .order-info-list div.people .num-oper {
+  width: 100%;
+  height: 35px;
+  padding-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+body .wapper .order-box .order-info .order-info-list div.people .num-oper a {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  background: url("../css/images/order.png") no-repeat 0 0;
+}
+body .wapper .order-box .order-info .order-info-list div.people .num-oper .num-pre {
+  background-position: 0 -41px;
+}
+body .wapper .order-box .order-info .order-info-list div.people .num-oper .num-input {
+  float: left;
+  width: 36px;
+  height: 22px;
+  margin: 0 5px;
+  text-align: center;
+}
+body .wapper .order-box .order-info .order-info-list div.people .num-oper .num-next {
+  background-position: -17px -41px;
+}
+body .wapper .order-box .order-info .order-info-list div.price span {
+  font-size: 16px;
+  color: #f47300;
+  font-weight: bolder;
+}
+body .wapper .order-box .order-info .order-info-list div.total span {
+  font-size: 16px;
+  color: #f47300;
+  font-weight: bolder;
+}
+body .wapper .order-box .order-info .order-info-list div.tourist a {
+  display: inline-block;
+  width: 64px;
+  height: 26px;
+  line-height: 26px;
+  color: #00ba71;
+  border: 1px solid #00ba71;
+  border-radius: 5px;
+  text-align: center;
+}
+body .wapper .order-box .order-info .order-info-list:hover {
+  background-color: #f1f7f2;
+}
+body .wapper .order-box .order-info .name {
+  width: 220px;
+}
+body .wapper .order-box .order-info .product {
+  width: 220px;
+}
+body .wapper .order-box .order-info .type {
+  width: 110px;
+}
+body .wapper .order-box .order-info .people {
+  width: 130px;
+}
+body .wapper .order-box .order-info .price {
+  width: 130px;
+}
+body .wapper .order-box .order-info .total {
+  width: 130px;
+}
+body .wapper .order-box .order-info .tourist {
+  width: 150px;
+}
+body .wapper .order-people h3 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #303030;
+  font-weight: bolder;
+  border-bottom: 2px solid #42cf9a;
+}
+body .wapper .order-people .people-details {
+  margin-top: 20px;
+}
+body .wapper .order-people .people-details ul {
+  position: relative;
+}
+body .wapper .order-people .people-details ul li {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+body .wapper .order-people .people-details ul li span {
+  float: left;
+  width: 100px;
+  text-align: right;
+  color: #ababab;
+}
+body .wapper .order-people .people-details ul li span i {
+  display: inline-block;
+  padding-left: 4px;
+  padding-top: 4px;
+  width: 6px;
+  height: 6px;
+  background: url("../css/images/order.png") no-repeat -54px -34px;
+}
+body .wapper .order-people .people-details ul li input {
+  float: left;
+  height: 14px;
+  line-height: 14px;
+  padding: 4px 8px;
+}
+body .wapper .order-people .people-details ul li input.people-name {
+  width: 240px;
+}
+body .wapper .order-people .people-details ul li input.people-id {
+  width: 200px;
+}
+body .wapper .order-people .people-details ul li input.people-phone {
+  width: 240px;
+}
+body .wapper .order-total {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 20px;
+  position: relative;
+}
+body .wapper .order-total .order-price {
+  float: left;
+  padding-left: 20px;
+}
+body .wapper .order-total .order-price span {
+  font-size: 18px;
+  color: #848484;
+}
+body .wapper .order-total .order-price span b {
+  font-weight: bolder;
+  padding-left: 10px;
+  color: #f25500;
+}
+body .wapper .order-total .order-price input {
+  margin-left: 20px;
+}
+body .wapper .order-total .order-price label a {
+  color: #f25500;
+  margin: 0 5px;
+  font-weight: bolder;
+}
+body .wapper .order-total .order-next {
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+body .wapper .order-total .order-next a.next-btn {
+  display: block;
+  width: 180px;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #ce6100;
+  text-align: center;
+  background-color: #f57a00;
+  color: #fff;
+  font-size: 14px;
+}
+body .wapper .footer-box {
+  width: 1180px;
+  margin: 40px auto 0;
+}
+body .wapper .footer-box .footer {
+  color: #737373;
+}
+body .wapper .footer-box .footer .footer-top {
+  text-align: center;
+}
+body .wapper .footer-box .footer .footer-top a {
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+}
+body .wapper .footer-box .footer .footer-copy {
+  text-align: center;
+  margin-top: 10px;
+}
+body .bind-tourist {
+  display: none;
+  width: 860px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -430px;
+  border: 2px solid #24ba80;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 10;
+}
+body .bind-tourist .bind-title {
+  height: 40px;
+  line-height: 40px;
+  background-color: #24ba80;
+  position: relative;
+  overflow: hidden;
+}
+body .bind-tourist .bind-title h3 {
+  float: left;
+  width: 814px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+body .bind-tourist .bind-title .close-btn {
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: url("../css/images/order.png") no-repeat 0 -61px;
+}
+body .bind-tourist .bind-con {
+  padding: 20px;
+}
+body .bind-tourist .bind-con .con-title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+body .bind-tourist .bind-con .con-title h3 {
+  float: left;
+  font-size: 14px;
+  color: #303030;
+  margin: 0 10px;
+}
+body .bind-tourist .bind-con .con-title .add-tourist {
+  float: left;
+  width: 74px;
+  height: 26px;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+  background-color: #ff7938;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+body .bind-tourist .bind-con .con-title span {
+  float: left;
+  color: #ababab;
+}
+body .bind-tourist .bind-con .bind-box .bind-list-title {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+  background-color: #f6f6f6;
+}
+body .bind-tourist .bind-con .bind-box .bind-list-title div {
+  float: left;
+}
+body .bind-tourist .bind-con .bind-box .bind-list-box {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+body .bind-tourist .bind-con .bind-box .bind-list-box .bind-list {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  border-bottom: 1px dashed #ccc;
+}
+body .bind-tourist .bind-con .bind-box .bind-list-box .bind-list div {
+  float: left;
+}
+body .bind-tourist .bind-con .bind-box .bind-list-box .bind-list div span,
+body .bind-tourist .bind-con .bind-box .bind-list-box .bind-list div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .bind-tourist .bind-con .bind-box .bind-list-box .bind-list:hover {
+  background-color: #f1f7f2;
+}
+body .bind-tourist .bind-con .bind-box .choose {
+  width: 80px;
+}
+body .bind-tourist .bind-con .bind-box .name {
+  width: 194px;
+}
+body .bind-tourist .bind-con .bind-box .number {
+  width: 220px;
+}
+body .bind-tourist .bind-con .bind-box .phone {
+  width: 180px;
+}
+body .bind-tourist .bind-con .bind-box .operation {
+  width: 80px;
+}
+body .add-park {
+  display: none;
+  width: 340px;
+  height: 260px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -170px;
+  margin-top: -130px;
+  border: 2px solid #24ba80;
+  box-sizing: border-box;
+  z-index: 10;
+}
+body .add-park .add-title {
+  height: 40px;
+  line-height: 40px;
+  background-color: #24ba80;
+  position: relative;
+  overflow: hidden;
+}
+body .add-park .add-title h3 {
+  float: left;
+  width: 214px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+body .add-park .add-title a {
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: url("../css/images/order.png") no-repeat 0 -61px;
+}
+body .add-park .add-box {
+  padding: 30px 20px 10px 20px;
+}
+body .add-park .add-box ul {
+  position: relative;
+}
+body .add-park .add-box ul li {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+body .add-park .add-box ul li span {
+  float: left;
+  width: 80px;
+  margin-right: 10px;
+  text-align: right;
+}
+body .add-park .add-box ul li input {
+  float: left;
+  width: 160px;
+  height: 14px;
+  line-height: 14px;
+  padding: 5px 10px;
+}
+body .add-park .ok-box {
+  text-align: center;
+  padding-left: 110px;
+}
+body .add-park .ok-box a.ok-btn {
+  display: block;
+  width: 54px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  background-color: #ee4e00;
+  color: #fff;
+  border-radius: 5px;
+}
+body .zoom {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .3;
+  filter: alpha(opacity=30);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
